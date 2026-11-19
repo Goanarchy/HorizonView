@@ -4,7 +4,7 @@ Fecha: 18 de noviembre de 2026. Servidor local `127.0.0.1:8770`, Chrome con CDP.
 
 > **Estado final:** las cifras, el enlace vigente y la última etapa están en «Etapa 6: mapa vectorial MapLibre, radar, hechos viales y contexto costero» al final de este documento. Las secciones anteriores conservan el historial de verificaciones previas.
 >
-> **Enlaces:** todos los nombres `*.trycloudflare.com` citados en pasadas anteriores eran válidos al cerrar esa pasada, pero **ya caducaron** (Cloudflare Quick Tunnel cambia de hostname al reiniciar). El único vigente es `https://ate-ist-express-miscellaneous.trycloudflare.com/`, guardado en `URL_Movil.txt`.
+> **Enlaces:** todos los nombres `*.trycloudflare.com` citados en pasadas anteriores eran válidos al cerrar esa pasada, pero **ya caducaron** (Cloudflare Quick Tunnel cambia de hostname al reiniciar). El único vigente es `https://sam-provide-michel-install.trycloudflare.com/`, guardado en `URL_Movil.txt`.
 
 ## Verificado
 
@@ -501,4 +501,4 @@ Sonda CDP ad-hoc (`verify_drive_interactions.py`, Chrome headless 390×844) sobr
 
 > Durante la pasada, dos verificaciones CDP (`verify_map.py`, `verify_stage1.py`) fallaron al ejecutarse en paralelo porque comparten el puerto 9333 y porque un túnel caducado devolvía HTTP 530 / Error 1033. Se ejecutaron de nuevo de forma secuencial con el túnel vigente y pasaron. No fue una regresión de la app.
 
-Enlace vigente al cerrar la auditoría: **`https://ate-ist-express-miscellaneous.trycloudflare.com/`**. Verificado por HTTPS con certificado público (`/api/health` = 200, 1051 cámaras) y guardado en `URL_Movil.txt` junto con `assets/qr-movil.png`. Tailscale sigue sin instalarse (`TAILSCALE=NO`), así que el hostname fijo `*.ts.net` continúa pendiente de confirmación; el equipo debe permanecer encendido y Cloudflare regenera el enlace al ejecutar `start-mobile.ps1`.
+Enlace vigente al cerrar la auditoría: **`https://sam-provide-michel-install.trycloudflare.com/`**. Verificado por HTTPS con certificado público (`/api/health` = 200, 1051 cámaras, 1042 streams; `/src/app.js` y `/styles.css` = 200; título de HorizonView) y guardado en `URL_Movil.txt` junto con `assets/qr-movil.png`. Se generó con `HV_PORT=8771` para publicar la copia de HorizonView sin detener la instalación original en 8770. Tailscale sigue sin instalarse (`TAILSCALE=NO`), así que el hostname fijo `*.ts.net` continúa pendiente de confirmación; el equipo debe permanecer encendido y Cloudflare regenera el enlace al ejecutar `start-mobile.ps1`.

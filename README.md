@@ -12,7 +12,7 @@
 
 Es HTTPS con certificado público: **no hay avisos de seguridad, no se instala nada en el teléfono y el GPS funciona**. No hace falta abrir puertos ni tener IPv6 público.
 
-- Enlace vigente al cerrar esta documentación (respaldo Cloudflare): **`https://ate-ist-express-miscellaneous.trycloudflare.com/`**. Sirve HTTPS válido para Android e iPhone; `/api/health` responde `200` con 1051 cámaras y 1042 streams. Los enlaces `*.trycloudflare.com` citados en secciones históricas de `docs/AUDITORÍA.md` ya caducaron: solo es vigente el de `URL_Movil.txt`.
+- Enlace vigente al cerrar esta documentación (respaldo Cloudflare): **`https://sam-provide-michel-install.trycloudflare.com/`**. Sirve HTTPS válido para Android e iPhone; `/api/health` responde `200` con 1051 cámaras y 1042 streams, y muestra la interfaz de HorizonView (`src/app.js` y `styles.css` responden `200`). Los enlaces `*.trycloudflare.com` citados en secciones históricas de `docs/AUDITORÍA.md` ya caducaron: solo es vigente el de `URL_Movil.txt`. Si necesitas un enlace nuevo, ejecuta `start-mobile.ps1`; con `HV_PORT=8771` publica una copia separada sin detener la instalación original.
 - Con Cloudflare el enlace cambia en cada ejecución; con Tailscale Funnel es estable. Ambos son gratuitos.
 - Para detener el enlace fijo: `tailscale funnel off`. Para volver a publicarlo: ejecuta de nuevo el `.bat` estable.
 - La computadora debe permanecer encendida y conectada; el servicio se publica desde ella.

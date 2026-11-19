@@ -10,8 +10,10 @@ $pyCmd = Get-Command python -ErrorAction SilentlyContinue
 if (-not $pyCmd) { $pyCmd = Get-Command py -ErrorAction SilentlyContinue }
 if (-not $pyCmd) { throw 'No se encontro Python 3.' }
 
-# 1) Servidor local de la aplicacion.
-$listen = Get-NetTCPConnection -LocalPort 8770 -State Listen -ErrorAction SilentlyContinue | Select-Object -First 1
+# 1) Servidor local de la aplicacion. HV_PORT permite publicar una copia
+# separada sin detener la instalacion original que escucha en 8770.
+$port = if ($env:HV_PORT) { $env:HV_PORT } else { '8770' }
+$listen = Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue | Select-Object -First 1
 if ($listen) {
     Write-Host "Servidor local ya activo (PID $($listen.OwningProcess))."
 } else {
@@ -37,7 +39,7 @@ Get-CimInstance Win32_Process -Filter "Name = 'cloudflared.exe'" -ErrorAction Si
 $tunOut = Join-Path $logDir 'tunnel.out.log'
 $tunErr = Join-Path $logDir 'tunnel.err.log'
 $tunnel = Start-Process -FilePath $cf `
-    -ArgumentList @('tunnel', '--no-autoupdate', '--url', 'http://127.0.0.1:8770') `
+    -ArgumentList @('tunnel', '--no-autoupdate', '--url', "http://127.0.0.1:$port") `
     -WorkingDirectory $app -PassThru -WindowStyle Hidden `
     -RedirectStandardOutput $tunOut -RedirectStandardError $tunErr
 Write-Host "Tunel iniciado (PID $($tunnel.Id)). Esperando URL publica..."
