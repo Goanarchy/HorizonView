@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Runtime-generated state
+data/stream_failures.json
+*.log
+logs/
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Temporary verification profiles and captures
+.tmp/
+temp/

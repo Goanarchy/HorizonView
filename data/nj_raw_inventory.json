@@ -1,0 +1,6458 @@
+{
+ "at": "2026-11-18 21:33:59",
+ "tours": [
+  {
+   "id": 4,
+   "name": "Garden State Parkway Tour"
+  },
+  {
+   "id": 3,
+   "name": "NJ Turnpike Tour"
+  },
+  {
+   "id": 146,
+   "name": "NJ Turnpike Newark Bay Ext. Tour"
+  },
+  {
+   "id": 2,
+   "name": "NJ Turnpike Penn. Ext.Tour"
+  },
+  {
+   "id": 65,
+   "name": "I-195 Tour"
+  },
+  {
+   "id": 66,
+   "name": "I-278 Tour"
+  },
+  {
+   "id": 67,
+   "name": "I-280 Tour"
+  },
+  {
+   "id": 68,
+   "name": "I-287 Tour"
+  },
+  {
+   "id": 69,
+   "name": "I-295 Tour"
+  },
+  {
+   "id": 70,
+   "name": "I-676 Tour"
+  },
+  {
+   "id": 71,
+   "name": "I-76 Tour"
+  },
+  {
+   "id": 72,
+   "name": "I-78 Tour"
+  },
+  {
+   "id": 73,
+   "name": "I-80 Tour"
+  },
+  {
+   "id": 75,
+   "name": "NJ-10 Tour"
+  },
+  {
+   "id": 74,
+   "name": "NJ-109 Tour"
+  },
+  {
+   "id": 79,
+   "name": "NJ-12 Tour"
+  },
+  {
+   "id": 76,
+   "name": "NJ-120 Tour"
+  },
+  {
+   "id": 77,
+   "name": "NJ-124 Tour"
+  },
+  {
+   "id": 78,
+   "name": "NJ-129 Tour"
+  },
+  {
+   "id": 80,
+   "name": "NJ-133 Tour"
+  },
+  {
+   "id": 81,
+   "name": "NJ-138 Tour"
+  },
+  {
+   "id": 82,
+   "name": "NJ-139 Tour"
+  },
+  {
+   "id": 83,
+   "name": "NJ-147 Tour"
+  },
+  {
+   "id": 84,
+   "name": "NJ-15 Tour"
+  },
+  {
+   "id": 85,
+   "name": "NJ-166 Tour"
+  },
+  {
+   "id": 86,
+   "name": "NJ-168 Tour"
+  },
+  {
+   "id": 88,
+   "name": "NJ-17 Tour"
+  },
+  {
+   "id": 87,
+   "name": "NJ-173 Tour"
+  },
+  {
+   "id": 91,
+   "name": "NJ-18 Tour"
+  },
+  {
+   "id": 89,
+   "name": "NJ-183 Tour"
+  },
+  {
+   "id": 90,
+   "name": "NJ-185 Tour"
+  },
+  {
+   "id": 92,
+   "name": "NJ-20 Tour"
+  },
+  {
+   "id": 93,
+   "name": "NJ-21 Tour"
+  },
+  {
+   "id": 94,
+   "name": "NJ-23 Tour"
+  },
+  {
+   "id": 95,
+   "name": "NJ-24 Tour"
+  },
+  {
+   "id": 96,
+   "name": "NJ-27 Tour"
+  },
+  {
+   "id": 97,
+   "name": "NJ-28 Tour"
+  },
+  {
+   "id": 98,
+   "name": "NJ-29 Tour"
+  },
+  {
+   "id": 108,
+   "name": "NJ-3 Tour"
+  },
+  {
+   "id": 99,
+   "name": "NJ-31 Tour"
+  },
+  {
+   "id": 101,
+   "name": "NJ-33 Tour"
+  },
+  {
+   "id": 100,
+   "name": "NJ-33 Business Tour"
+  },
+  {
+   "id": 103,
+   "name": "NJ-34 Tour"
+  },
+  {
+   "id": 102,
+   "name": "NJ-347 Tour"
+  },
+  {
+   "id": 104,
+   "name": "NJ-35 Tour"
+  },
+  {
+   "id": 105,
+   "name": "NJ-36 Tour"
+  },
+  {
+   "id": 106,
+   "name": "NJ-37 Tour"
+  },
+  {
+   "id": 107,
+   "name": "NJ-38 Tour"
+  },
+  {
+   "id": 117,
+   "name": "NJ-4 Tour"
+  },
+  {
+   "id": 109,
+   "name": "NJ-41 Tour"
+  },
+  {
+   "id": 110,
+   "name": "NJ-42 Tour"
+  },
+  {
+   "id": 111,
+   "name": "NJ-439 Tour"
+  },
+  {
+   "id": 112,
+   "name": "NJ-440 Tour"
+  },
+  {
+   "id": 113,
+   "name": "NJ-45 Tour"
+  },
+  {
+   "id": 114,
+   "name": "NJ-47 Tour"
+  },
+  {
+   "id": 116,
+   "name": "NJ-49 Tour"
+  },
+  {
+   "id": 115,
+   "name": "NJ-495 Tour"
+  },
+  {
+   "id": 118,
+   "name": "NJ-50 Tour"
+  },
+  {
+   "id": 119,
+   "name": "NJ-52 Tour"
+  },
+  {
+   "id": 120,
+   "name": "NJ-53 Tour"
+  },
+  {
+   "id": 121,
+   "name": "NJ-55 Tour"
+  },
+  {
+   "id": 122,
+   "name": "NJ-66 Tour"
+  },
+  {
+   "id": 128,
+   "name": "NJ-7 Tour"
+  },
+  {
+   "id": 123,
+   "name": "NJ-70 Tour"
+  },
+  {
+   "id": 124,
+   "name": "NJ-71 Tour"
+  },
+  {
+   "id": 125,
+   "name": "NJ-72 Tour"
+  },
+  {
+   "id": 126,
+   "name": "NJ-73 Tour"
+  },
+  {
+   "id": 127,
+   "name": "NJ-79 Tour"
+  },
+  {
+   "id": 129,
+   "name": "NJ-82 Tour"
+  },
+  {
+   "id": 130,
+   "name": "NJ-83 Tour"
+  },
+  {
+   "id": 131,
+   "name": "NJ-88 Tour"
+  },
+  {
+   "id": 132,
+   "name": "NJ-93 Tour"
+  },
+  {
+   "id": 133,
+   "name": "NJ-94 Tour"
+  },
+  {
+   "id": 137,
+   "name": "US-1 Tour"
+  },
+  {
+   "id": 134,
+   "name": "US-130 Tour"
+  },
+  {
+   "id": 135,
+   "name": "US-1&9 Tour"
+  },
+  {
+   "id": 136,
+   "name": "US-1&9 Truck Tour"
+  },
+  {
+   "id": 138,
+   "name": "US-202 Tour"
+  },
+  {
+   "id": 139,
+   "name": "US-206 Tour"
+  },
+  {
+   "id": 140,
+   "name": "US-22 Tour"
+  },
+  {
+   "id": 141,
+   "name": "US-30 Tour"
+  },
+  {
+   "id": 142,
+   "name": "US-322 Tour"
+  },
+  {
+   "id": 143,
+   "name": "US-40 Tour"
+  },
+  {
+   "id": 144,
+   "name": "US-46 Tour"
+  },
+  {
+   "id": 145,
+   "name": "US-9 Tour"
+  }
+ ],
+ "cameras": [
+  {
+   "id": 51,
+   "name": "NJ-21 @ Murray Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.72171445",
+   "longitude": "-74.17800492",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 52,
+   "name": "MM 2.4 Pennsylvania Ext. West of US 130",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.10195",
+   "longitude": "-74.79013",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 55,
+   "name": "MM 001.2 North of Delaware Memorial Bridge",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "39.680817",
+   "longitude": "-75.47113",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 56,
+   "name": "MM 0.0 Hudson County Ext. Interchange 14",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7072",
+   "longitude": "-74.15522",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 269,
+   "name": "NJ-7 @ County Road 508 / Newark-Jersey City Turnpike Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.74678859",
+   "longitude": "-74.10058326",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 681,
+   "name": "I-76 @ I-295",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87497089",
+   "longitude": "-75.10159832",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 740,
+   "name": "NJ-129 @ Lalor Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.19937897",
+   "longitude": "-74.75331116",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 742,
+   "name": "NJ-18 @ NJ-66",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.2280882",
+   "longitude": "-74.05021587",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 745,
+   "name": "US-1 @ NJ-129",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.215975",
+   "longitude": "-74.75812784",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 764,
+   "name": "I-676 @ Walt Whitman Bridge",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.90077124",
+   "longitude": "-75.11046845",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 769,
+   "name": "I-78 @ Tunnel Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.65130717",
+   "longitude": "-75.03489703",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 814,
+   "name": "US-1&9 Truck @ US-1&9 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.733995",
+   "longitude": "-74.125747",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 891,
+   "name": "NJ-3 @ NJ-120 Across from American Dream",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.804697",
+   "longitude": "-74.074171",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1055,
+   "name": "NJ-33 @ Hightstown Bypass / New Jersey Turnpike",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.26867679",
+   "longitude": "-74.4994588",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1191,
+   "name": "NJ-440 @ County Road 514 / Woodbridge Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.5272576",
+   "longitude": "-74.33105393",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1399,
+   "name": "US-22 @ NJ-28 / Easton Turnpike",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.59387193",
+   "longitude": "-74.66269164",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1439,
+   "name": "NJ-10 @ Powder Mill Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.85954096",
+   "longitude": "-74.49036005",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10470,
+   "name": "I-287 @ US-1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.52852635",
+   "longitude": "-74.35489906",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10500,
+   "name": "NJ-124 @ South Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.78900025",
+   "longitude": "-74.47254893",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11250,
+   "name": "US-1&9 @ NJ-35",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.57249134",
+   "longitude": "-74.29232283",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12290,
+   "name": "NJ-29 @ NJ-129",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.19216797",
+   "longitude": "-74.75196218",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12440,
+   "name": "I-295 @ Prior to Tomlin Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.80626882",
+   "longitude": "-75.29689455",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12690,
+   "name": "NJ-42 @ Atlantic City Expressway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.76840236",
+   "longitude": "-75.04874539",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12720,
+   "name": "US-30 @ I-676",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.94659815",
+   "longitude": "-75.11408065",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12760,
+   "name": "NJ-38 @ US-130/US-30 Airport Circle",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.93364337",
+   "longitude": "-75.08216841",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12830,
+   "name": "NJ-70 @ Cornell Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.92436191",
+   "longitude": "-75.046352",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12920,
+   "name": "I-195 @ County Road 620 / Arena Drive",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.18808872",
+   "longitude": "-74.69109479",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13180,
+   "name": "NJ-37 @ Colonial Drive",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.00601426",
+   "longitude": "-74.29805812",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 15040,
+   "name": "NJ-495 @ Columbia Avenue Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.775163",
+   "longitude": "-74.03914896",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000227,
+   "name": "NJ-24 @ Whippany Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.80505346",
+   "longitude": "-74.44467512",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000244,
+   "name": "NJ-31 @ NJ-12 / Flemington Circle",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.50277936",
+   "longitude": "-74.85364485",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000249,
+   "name": "NJ-34 @ Allenwood Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.15492609",
+   "longitude": "-74.09845735",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000250,
+   "name": "NJ-35 @ NJ-88 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.08037893",
+   "longitude": "-74.04745195",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000309,
+   "name": "NJ-70 & NJ-72 Circle",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.89830495",
+   "longitude": "-74.59544559",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000322,
+   "name": "NJ-82 @ US-22 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.69411087",
+   "longitude": "-74.26042938",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000329,
+   "name": "NJ-139 @ Summit Avenue Lower Level",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73672224",
+   "longitude": "-74.05837473",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000332,
+   "name": "NJ-168 @ New Jersey Turnpike Exit 3 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.86218042",
+   "longitude": "-75.07789293",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000345,
+   "name": "I-280 @ New Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.84805859",
+   "longitude": "-74.35230495",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 10000423,
+   "name": "US-202 @ Washington Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.79693893",
+   "longitude": "-74.48214383",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000425,
+   "name": "US-206 @ South Broad Ave / Whitehorse Circle",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.18801141",
+   "longitude": "-74.70452599",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110001004,
+   "name": "NJ-17 @ Orient Way",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81384257",
+   "longitude": "-74.10858732",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 64,
+   "name": "MM 0.0 Hudson County Ext. Interchange 14",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.706966",
+   "longitude": "-74.15508",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 77,
+   "name": "MM 002.1 South of Interchange 1",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "39.68439",
+   "longitude": "-75.45353",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 84,
+   "name": "MM 2.9 Pennsylvania Ext. West of Toll Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.0983",
+   "longitude": "-74.78273",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 328,
+   "name": "NJ-7 @ County Road 508 / Newark-Jersey City Turnpike Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.74678795",
+   "longitude": "-74.10057867",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 746,
+   "name": "NJ-18 @ NJ-34",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.27452894",
+   "longitude": "-74.16772825",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 752,
+   "name": "US-130 @ US-322",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.80297696",
+   "longitude": "-75.34739056",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 770,
+   "name": "I-78 @ Pattenburg Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.64416479",
+   "longitude": "-74.9973554",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10210,
+   "name": "NJ-10 @ NJ-53",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8518486",
+   "longitude": "-74.47440338",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11240,
+   "name": "US-1&9 @ Avenel Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.57954667",
+   "longitude": "-74.2856955",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12160,
+   "name": "NJ-73 @ County Road 561 / South Egg Harbor Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.68323097",
+   "longitude": "-74.88867432",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12280,
+   "name": "NJ-29 @ Lamberton Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.19221318",
+   "longitude": "-74.75591753",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12310,
+   "name": "US-1 @ US-1 Business / Trenton Freeway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.26808775",
+   "longitude": "-74.71460963",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12450,
+   "name": "I-295 @ County Road 678 / Berkley Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.82039052",
+   "longitude": "-75.23879042",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12630,
+   "name": "NJ-37 @ NJ-35",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.94122742",
+   "longitude": "-74.0821886",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12730,
+   "name": "US-30 @ Collingswood Circle",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.91830826",
+   "longitude": "-75.08865474",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12780,
+   "name": "NJ-38 @ NJ-70",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.93480414",
+   "longitude": "-75.06984532",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12930,
+   "name": "I-195 @ US 130",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.2024328",
+   "longitude": "-74.63585791",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 13190,
+   "name": "NJ-37 @ North Hampton Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.99070064",
+   "longitude": "-74.26755514",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13270,
+   "name": "I-295 @ NJ 168 / Black Horse Pike",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87237549",
+   "longitude": "-75.08177185",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14050,
+   "name": "US-9 @ NJ-33 Business Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.259072",
+   "longitude": "-74.291747",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14170,
+   "name": "NJ-42 @ College Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.78392112",
+   "longitude": "-75.04849553",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 15050,
+   "name": "NJ-495 @ Columbia Avenue Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.77516451",
+   "longitude": "-74.03914785",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000005,
+   "name": "NJ-138 @ Garden State Parkway Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.1704338",
+   "longitude": "-74.10168854",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000179,
+   "name": "US-1&9 @ NJ-21 / I-78",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7094962",
+   "longitude": "-74.18031494",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000187,
+   "name": "US-1&9 Truck @ US-1&9 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.733995",
+   "longitude": "-74.125746",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000245,
+   "name": "NJ-31 @ US-202 / Flemington Circle",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.50226813",
+   "longitude": "-74.85358763",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000252,
+   "name": "NJ-36 @ NJ-35 Near Garden State Parkway Ramp Camera #1 (Keyport)",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.29059174",
+   "longitude": "-74.0521395",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000304,
+   "name": "NJ-72 & NJ-70 Circle",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.89831504",
+   "longitude": "-74.59543923",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000312,
+   "name": "I-78 @ US-22",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.64164914",
+   "longitude": "-74.87525351",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000323,
+   "name": "NJ-82 @ East of Route 22 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.69305608",
+   "longitude": "-74.25617473",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000330,
+   "name": "NJ-139 @ Summit Avenue Upper Level",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73673469",
+   "longitude": "-74.05870733",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000346,
+   "name": "I-280 @ East of New Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8399779",
+   "longitude": "-74.33878657",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 10000629,
+   "name": "NJ-3 @ NJ-120 Facing NJ-120 North Traffic",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.804697",
+   "longitude": "-74.072971",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 36,
+   "name": "MM 002.4 Interchange 1",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "39.685665",
+   "longitude": "-75.44843",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 67,
+   "name": "MM 0.7 Hudson County Ext. E of Interchange 14",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.702934",
+   "longitude": "-74.14318",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 82,
+   "name": "MM 3.1 Pennsylvania Ext. West of Toll Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.0973",
+   "longitude": "-74.77832",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 741,
+   "name": "NJ-129 @ Cass Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.20726013",
+   "longitude": "-74.75514221",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 763,
+   "name": "US-130 @ NJ 33 (East Windsor Township)",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.25600815",
+   "longitude": "-74.55169678",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 768,
+   "name": "NJ-173 @ I-78 / US-22",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.670323",
+   "longitude": "-75.13540164",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 850,
+   "name": "I-280 @ Eisenhower Parkway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.82553351",
+   "longitude": "-74.32131454",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1527,
+   "name": "NJ-21 @ Oliver Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.72721526",
+   "longitude": "-74.17220575",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10570,
+   "name": "NJ-139 @ Holland Tunnel Approach/Jersey Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73080685",
+   "longitude": "-74.04626732",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10760,
+   "name": "I-287 @ NJ-10",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.83312572",
+   "longitude": "-74.43828574",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11230,
+   "name": "US-1&9 @ Inman Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.58711624",
+   "longitude": "-74.27913666",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12320,
+   "name": "US-1 @ Bakers Basin Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.27696745",
+   "longitude": "-74.70394838",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12790,
+   "name": "NJ-38 @ Cuthbert Boulevard",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.93559452",
+   "longitude": "-75.05432683",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12850,
+   "name": "NJ-70 @ Kings Highway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.913658",
+   "longitude": "-75.010758",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13080,
+   "name": "NJ-55 @ Deptford Center Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.82801444",
+   "longitude": "-75.10429543",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13110,
+   "name": "NJ-138 @ NJ-18 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.17115456",
+   "longitude": "-74.07500165",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13140,
+   "name": "NJ-72 @ Garden State Parkway (Exit 63)",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.71184983",
+   "longitude": "-74.27964553",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13200,
+   "name": "NJ-37 @ Oakridge Parkway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.96719356",
+   "longitude": "-74.22823591",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 15160,
+   "name": "US-130 @ NJ-47 Brooklawn Circle",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87568085",
+   "longitude": "-75.12246704",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000201,
+   "name": "NJ-7 @ NJ Turnpike Eastern Spur Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.75450302",
+   "longitude": "-74.10927143",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000228,
+   "name": "NJ-24 @ Whippany Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.80504437",
+   "longitude": "-74.44467334",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000231,
+   "name": "NJ-29 @ Northbound Tunnel Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.19494071",
+   "longitude": "-74.75710182",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000251,
+   "name": "NJ-35 @ NJ-88 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.08038038",
+   "longitude": "-74.04745195",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000274,
+   "name": "US-46 @ Baldwin Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.863947",
+   "longitude": "-74.395667",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000324,
+   "name": "NJ-82 @East of Route 22 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.6930568",
+   "longitude": "-74.25617741",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000328,
+   "name": "NJ-138 @ Allenwood Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.17059236",
+   "longitude": "-74.09001272",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000333,
+   "name": "NJ-168 @ New Jersey Turnpike Exit 3 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.86216878",
+   "longitude": "-75.07789293",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000334,
+   "name": "I-195 @ New Jersey Turnpike",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.19345728",
+   "longitude": "-74.59992051",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000404,
+   "name": "US-1&9 Truck @ Jacobus Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73125213",
+   "longitude": "-74.11336249",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000469,
+   "name": "NJ-3 @ NJ-120 North",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.806667",
+   "longitude": "-74.074956",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000537,
+   "name": "I-295 @ CR 644",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.8545913",
+   "longitude": "-75.16683979",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000662,
+   "name": "NJ-3 @ West of Broad Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.857183",
+   "longitude": "-74.179761",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1,
+   "name": "MM 3.4 Pennsylvania Ext. East of Toll Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.095566",
+   "longitude": "-74.77275",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 39,
+   "name": "MM 013.0 North of Interchange 2",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "39.755783",
+   "longitude": "-75.27673",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 738,
+   "name": "NJ-35 @ Broadway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.10022389",
+   "longitude": "-74.0505488",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 747,
+   "name": "NJ-129 @ South Broad Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.21238285",
+   "longitude": "-74.75637913",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 882,
+   "name": "MM 1.1 Hudson Cnty Ext. W. of Nwk Bay Bridge",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.701168",
+   "longitude": "-74.13761",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1046,
+   "name": "NJ-31 @ I-78 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.63888566",
+   "longitude": "-74.89280295",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1392,
+   "name": "NJ-138 @ NJ-18 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.17108862",
+   "longitude": "-74.07497684",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1400,
+   "name": "US-22 @ US- 202 / Mountain Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.58281171",
+   "longitude": "-74.62392435",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10560,
+   "name": "NJ-139 @ New Jersey Turnpike / Newark Bay Extension",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73206139",
+   "longitude": "-74.04682675",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10710,
+   "name": "NJ-21 @ Hamilton Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73217585",
+   "longitude": "-74.16711107",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11220,
+   "name": "US-1&9 @ Hazelwood Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.59741974",
+   "longitude": "-74.27194214",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12180,
+   "name": "NJ-73 @ Jackson Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.78569689",
+   "longitude": "-74.90911189",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12500,
+   "name": "I-295 @ NJ 70",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.90885037",
+   "longitude": "-74.98433647",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12740,
+   "name": "US-30 @ I-295",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87559664",
+   "longitude": "-75.04912871",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12764,
+   "name": "NJ-42 @ NJ-55 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.8453616",
+   "longitude": "-75.09470076",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12800,
+   "name": "NJ-38 @ Haddonfield Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.93859486",
+   "longitude": "-75.02961279",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13210,
+   "name": "NJ-37 @ Garden State Parkway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.96386833",
+   "longitude": "-74.20640005",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000188,
+   "name": "US-1&9 Truck @ Wilson Avenue & Doremus Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.71342443",
+   "longitude": "-74.13054199",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000202,
+   "name": "NJ-7 @ NJ Turnpike Eastern Spur Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7545019",
+   "longitude": "-74.10927313",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000214,
+   "name": "NJ-18 @ Garden State Parkway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.28084896",
+   "longitude": "-74.08786578",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000229,
+   "name": "NJ-24 @ Greenwood Avenue Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7652524",
+   "longitude": "-74.40194381",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000233,
+   "name": "NJ-29 @ Northbound Tunnel Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.19645412",
+   "longitude": "-74.7575444",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000266,
+   "name": "NJ-42 @ NJ-168 / Black Horse Pike Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.81537152",
+   "longitude": "-75.06648073",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000267,
+   "name": "NJ-42 @ NJ-168 / Black Horse Pike Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.81537735",
+   "longitude": "-75.06648073",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000310,
+   "name": "NJ-72 @ Stafford Square Mall",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.69998968",
+   "longitude": "-74.26856396",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000335,
+   "name": "I-195 @ Sharon Station Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.17702351",
+   "longitude": "-74.54161838",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 10000347,
+   "name": "I-280 @ Laurel Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.80688922",
+   "longitude": "-74.28765101",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000360,
+   "name": "NJ-440 @ South Florida Grove Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.52670408",
+   "longitude": "-74.28783213",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000424,
+   "name": "US-202 @ Morris Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.79702168",
+   "longitude": "-74.48005109",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000430,
+   "name": "US-46 @ Baldwin Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.863947",
+   "longitude": "-74.395667",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000502,
+   "name": "NJ-120 @ North of Road D Overpass",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81547",
+   "longitude": "-74.067241",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000539,
+   "name": "NJ-3 @ NJ-17 Lower Camera",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81100251",
+   "longitude": "-74.10198611",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000641,
+   "name": "NJ-3 @ Garden State Parkway South Ramp",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.855817",
+   "longitude": "-74.1784",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 471,
+   "name": "MM 1.93 Hudson Cnty Ext. W. of Nwk Bay Bridge",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.696346",
+   "longitude": "-74.12214",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 484,
+   "name": "I-280 @ East of Laurel Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.80689043",
+   "longitude": "-74.28764969",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 893,
+   "name": "NJ-120 @ Washington Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.817053",
+   "longitude": "-74.065743",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1048,
+   "name": "NJ-21 @ Cherry Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73726914",
+   "longitude": "-74.16531187",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1215,
+   "name": "US-1&9 Truck @ Hackensack Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.72850322",
+   "longitude": "-74.10447374",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1406,
+   "name": "US-22 @ North Gaston Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.57975021",
+   "longitude": "-74.59614839",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10530,
+   "name": "US-202 @ Spring Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.80130768",
+   "longitude": "-74.48158264",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11010,
+   "name": "NJ-7 @ NJ-21",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.78685006",
+   "longitude": "-74.14772408",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11210,
+   "name": "US-1&9 @ Lawrence Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.60308901",
+   "longitude": "-74.2659761",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11430,
+   "name": "US-1 @ I-287",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.52904892",
+   "longitude": "-74.35377502",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12170,
+   "name": "NJ-73 @ East Taunton Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.79524702",
+   "longitude": "-74.9230144",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12340,
+   "name": "US-1 @ Quaker Bridge Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.29637013",
+   "longitude": "-74.68001876",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12470,
+   "name": "I-295 @ US-130 (West Deptford)",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.86143434",
+   "longitude": "-75.14929268",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12700,
+   "name": "NJ-42 @ NJ-41",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.83098054",
+   "longitude": "-75.08918867",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13220,
+   "name": "NJ-37 @ NJ-166",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.96321558",
+   "longitude": "-74.20044175",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000230,
+   "name": "NJ-24 @ Greenwood Avenue Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.76524857",
+   "longitude": "-74.40194828",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000236,
+   "name": "NJ-29 @ Southbound Tunnel Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.19894208",
+   "longitude": "-74.75856792",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000246,
+   "name": "NJ-31 @ I-78 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.63777661",
+   "longitude": "-74.88726091",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000247,
+   "name": "NJ-33 @ Millstone Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.2628216",
+   "longitude": "-74.42048353",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000256,
+   "name": "NJ-38 @ Cherry Hill Mall Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.93926839",
+   "longitude": "-75.01935662",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000270,
+   "name": "NJ-45 @ US-130",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.86991676",
+   "longitude": "-75.12973373",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000276,
+   "name": "US-46 @ West Of Beverwyck Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.863349",
+   "longitude": "-74.390395",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000361,
+   "name": "NJ-440 @ Amboy Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.52843458",
+   "longitude": "-74.27509485",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000415,
+   "name": "US-30 @ Evesham Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.85530281",
+   "longitude": "-75.02705947",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000419,
+   "name": "NJ-70 @ Cornell Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.92436235",
+   "longitude": "-75.04635085",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000524,
+   "name": "NJ-35 @ NJ-34/NJ-70",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.11617121",
+   "longitude": "-74.07329109",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000531,
+   "name": "I-195 @ CR 537",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.15993598",
+   "longitude": "-74.42437339",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 10000642,
+   "name": "NJ-3 @ Across from Garden State Parkway Park and Ride",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.852778",
+   "longitude": "-74.176111",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110001001,
+   "name": "NJ-3 @ NJ-17 - NJ-17 South to NJ-3 East Ramp",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81100443",
+   "longitude": "-74.10198611",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 88,
+   "name": "MM 026.1 Interchange 3",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "39.86157",
+   "longitude": "-75.0758",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 509,
+   "name": "I-280 @ Prospect Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.79815332",
+   "longitude": "-74.25389441",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 612,
+   "name": "MM 2.74 Hudson County Ext. W. of Int. 14A",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.692074",
+   "longitude": "-74.10798",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 726,
+   "name": "NJ-18 @ NJ-79",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.30965952",
+   "longitude": "-74.25101882",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 835,
+   "name": "NJ-21 @ Bridge Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.74587564",
+   "longitude": "-74.16695899",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 999,
+   "name": "NJ-138 @ NJ-35",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.17389333",
+   "longitude": "-74.04421516",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10830,
+   "name": "I-78 @ NJ-24",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.71146222",
+   "longitude": "-74.32413702",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11200,
+   "name": "US-1&9 @ East Grand Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.60671663",
+   "longitude": "-74.26198002",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12000,
+   "name": "NJ-73 @ Berlin Circle",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.80154152",
+   "longitude": "-74.93160862",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12295,
+   "name": "US-1 @ Nassau Park Boulevard Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.30420277",
+   "longitude": "-74.67136964",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12840,
+   "name": "NJ-70 @ Haddonfield Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.91909414",
+   "longitude": "-75.03401094",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13230,
+   "name": "NJ-37 @ Hooper Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.96317156",
+   "longitude": "-74.18797539",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000222,
+   "name": "US-22 @ Chimney Rock Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.57550428",
+   "longitude": "-74.56511635",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000238,
+   "name": "NJ-29 @ Lalor Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.19746633",
+   "longitude": "-74.75774791",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000248,
+   "name": "NJ-33 @ Millstone Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.2628216",
+   "longitude": "-74.42049783",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000257,
+   "name": "NJ-38 @ Cherry Hill Mall Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.9392584",
+   "longitude": "-75.01935608",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000268,
+   "name": "NJ-42 @ Route 55 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.84195331",
+   "longitude": "-75.09324184",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000277,
+   "name": "US-46 @ East Of Beverwyck Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.862654",
+   "longitude": "-74.381652",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000311,
+   "name": "NJ-72 @ Jennings Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.68852415",
+   "longitude": "-74.25268123",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000313,
+   "name": "I-78 @ Cowperthwaite Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.64298696",
+   "longitude": "-74.68864326",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000327,
+   "name": "US-130 @ Market Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.88534158",
+   "longitude": "-75.10792081",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000336,
+   "name": "I-195 @ Fort Plains Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.15585963",
+   "longitude": "-74.25506274",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000344,
+   "name": "US-130 @ US-206 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.14179864",
+   "longitude": "-74.70338491",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000355,
+   "name": "I-295 South of Browning Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87479732",
+   "longitude": "-75.10342789",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000405,
+   "name": "US-1&9 Truck @ NJ-440 / Communipaw Avenue Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.72379745",
+   "longitude": "-74.090452",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000416,
+   "name": "US-30 @ Evesham Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.85530479",
+   "longitude": "-75.02706349",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000643,
+   "name": "NJ-3 @ Garden State Parkway North Exit Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.851473",
+   "longitude": "-74.174223",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110002305,
+   "name": "NJ-120 @ Washington Facing NJ-120 South Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81705346",
+   "longitude": "-74.06694314",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 109,
+   "name": "MM 034.3 South of Interchange 4 Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "39.930435",
+   "longitude": "-74.95662",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 736,
+   "name": "US-130 @ NJ 90",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.97250858",
+   "longitude": "-75.03966844",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 916,
+   "name": "MM 3.38 Hudson County Ext. W. of Int 14A",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.686443",
+   "longitude": "-74.09802",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10320,
+   "name": "I-287 @ Durham Avenue Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.55333901",
+   "longitude": "-74.41393936",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11190,
+   "name": "US-1&9 @ Aviation Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.61839097",
+   "longitude": "-74.25059492",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12010,
+   "name": "NJ-73 @ Cooper Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.82573435",
+   "longitude": "-74.92798424",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12390,
+   "name": "US-1 @ Meadow Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.31191126",
+   "longitude": "-74.66178598",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12420,
+   "name": "I-295 Northbound Tunnel Entrance",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.8743015",
+   "longitude": "-75.09931219",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12750,
+   "name": "US-30 @ Whitehorse Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.81566224",
+   "longitude": "-74.99158971",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12810,
+   "name": "NJ-38 @ Church Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.94064424",
+   "longitude": "-75.01007983",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12870,
+   "name": "NJ-70 @ Old Orchard Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.89926204",
+   "longitude": "-74.95656326",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13240,
+   "name": "NJ-37 @ Washington Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.95412603",
+   "longitude": "-74.16287836",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14090,
+   "name": "US-9 @ Kennedy Boulevard Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.10680049",
+   "longitude": "-74.21920183",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000239,
+   "name": "NJ-29 @ Northbound Tunnel Exit",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.199357",
+   "longitude": "-74.75854381",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000255,
+   "name": "NJ-35 @ NJ-36 Near Garden State Parkway Ramp Camera #1 (Keyport)",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.42567789",
+   "longitude": "-74.20497023",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000278,
+   "name": "US-46 @ West Of I-80 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86152",
+   "longitude": "-74.369596",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000348,
+   "name": "I-280 @ East of Prospect Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.79473228",
+   "longitude": "-74.24873295",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 10000523,
+   "name": "NJ-18 @ Texas Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.3656815",
+   "longitude": "-74.29744531",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000614,
+   "name": "NJ-3 @ NJ-17 Upper Camera",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81185895",
+   "longitude": "-74.10161518",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000803,
+   "name": "NJ-120 @ Washington Facing NJ-120 South Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81619705",
+   "longitude": "-74.06657218",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110001036,
+   "name": "NJ-3 @ East of Garden State Parkway Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.84535863",
+   "longitude": "-74.1691124",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 21,
+   "name": "MM 034.4 South of Interchange 4",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "39.931416",
+   "longitude": "-74.95305",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 85,
+   "name": "MM 3.5 Hudson County Ext. Int. 14A Tower",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.684265",
+   "longitude": "-74.09735",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 274,
+   "name": "NJ-440 @ 63rd Street Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.695602",
+   "longitude": "-74.10737751",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 800,
+   "name": "I-287 @ US -22 Westbound",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.57674712",
+   "longitude": "-74.56869616",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1213,
+   "name": "US-1&9 Truck @ Duncan Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73054119",
+   "longitude": "-74.08497891",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1390,
+   "name": "NJ-21 @ 3rd Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.75730088",
+   "longitude": "-74.1668795",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10370,
+   "name": "I-80 @ I-280 / US-46",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86008176",
+   "longitude": "-74.36938292",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10820,
+   "name": "I-78 @ I-287 Northbound",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.64290114",
+   "longitude": "-74.64674012",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11180,
+   "name": "US-1&9 @ Wood Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.6265653",
+   "longitude": "-74.24310548",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12030,
+   "name": "NJ-70 @ NJ-73",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.89362992",
+   "longitude": "-74.92800799",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12140,
+   "name": "NJ-73 @ Cedar Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.83544326",
+   "longitude": "-74.92602172",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12260,
+   "name": "NJ-29 @ Southbound Tunnel Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.19985526",
+   "longitude": "-74.75879889",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12350,
+   "name": "US-1 @ Alexander Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.32666714",
+   "longitude": "-74.64361887",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12710,
+   "name": "US-30 @ Crosskeys Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.79779923",
+   "longitude": "-74.93362591",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12820,
+   "name": "NJ-38 @ Nixon Drive",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.94688774",
+   "longitude": "-74.96142924",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13150,
+   "name": "NJ-72 @ US-9",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.69407925",
+   "longitude": "-74.26027384",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13250,
+   "name": "NJ-37 @ Fischer Boulevard",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.95005522",
+   "longitude": "-74.12526724",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 9912685,
+   "name": "NJ-36 @ NJ-35 (Eatontown)",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.2905929",
+   "longitude": "-74.05213953",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000002,
+   "name": "I-295 Northbound Tunnel Exit",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87409468",
+   "longitude": "-75.09773167",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000216,
+   "name": "NJ-18 @ NJ-9",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.37060646",
+   "longitude": "-74.30665714",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000269,
+   "name": "NJ-42 @ Creek Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.85783734",
+   "longitude": "-75.09930641",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000338,
+   "name": "I-195 @ Aldrich Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.16699958",
+   "longitude": "-74.20638595",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000349,
+   "name": "I-280 @ Mount Pleasant Avenue Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.78208312",
+   "longitude": "-74.24437591",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000351,
+   "name": "I-287 @ South Randolphville Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.55659939",
+   "longitude": "-74.46250105",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000442,
+   "name": "NJ-36 @ NJ-35 Near Garden State Parkway Ramp Camera #2 (Keyport)",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.42567533",
+   "longitude": "-74.20495146",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000527,
+   "name": "NJ-120 @ Washington Facing Ramp to NJ-120 North",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81790895",
+   "longitude": "-74.06657218",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000619,
+   "name": "NJ-3 @ East of NJ-17, Ramp to NJ 3 East Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.810251",
+   "longitude": "-74.098335",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000663,
+   "name": "NJ-3 West of Bloomfield Avenue Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.841903",
+   "longitude": "-74.165149",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 4,
+   "name": "NJ-35 @ Cliffwood Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.43880048",
+   "longitude": "-74.22426624",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 127,
+   "name": "MM 037.0 North of Interchange 4",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "39.957684",
+   "longitude": "-74.91907",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 331,
+   "name": "NJ-440 @ 63rd Street Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.69559961",
+   "longitude": "-74.10738099",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 522,
+   "name": "I-287 @ Possumtown Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.55332316",
+   "longitude": "-74.48613095",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 939,
+   "name": "MM 3.99 Hudson County Ext. E. of Int. 14A",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.690296",
+   "longitude": "-74.08572",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1195,
+   "name": "US-22 @ Thompson Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.57495188",
+   "longitude": "-74.55307262",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11490,
+   "name": "I-78 @ Diamond Hill Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.67292764",
+   "longitude": "-74.407058",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12575,
+   "name": "US-1 @ Harrison Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.33701868",
+   "longitude": "-74.63093347",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12590,
+   "name": "I-295 Southbound to I-76 / Aljo Curve Northbound Tunnel Camera #3",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87454215",
+   "longitude": "-75.09667498",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12762,
+   "name": "NJ-42 @ Leaf Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.86367427",
+   "longitude": "-75.1002394",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12770,
+   "name": "NJ-73 @ US-30",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.77869638",
+   "longitude": "-74.91046056",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12860,
+   "name": "NJ-70 @ Radnor Boulevard",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.89407134",
+   "longitude": "-74.90445098",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 100749,
+   "name": "US-130 @ Manor Drive",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.01140415",
+   "longitude": "-74.96395352",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000007,
+   "name": "NJ-18 @ Foxborough Drive Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.379508",
+   "longitude": "-74.32286027",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000014,
+   "name": "NJ-73 @ Evesham Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87862134",
+   "longitude": "-74.92199784",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000220,
+   "name": "NJ-21 @ Chester Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.76725353",
+   "longitude": "-74.15967148",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000240,
+   "name": "NJ-29 @ before Tunnel Entrance",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.20216898",
+   "longitude": "-74.75890509",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000279,
+   "name": "US-46 @ West Of I-80 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86152",
+   "longitude": "-74.369596",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000339,
+   "name": "I-195 @ Aldrich Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.16699922",
+   "longitude": "-74.20638667",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000350,
+   "name": "I-280 @ Mount Pleasant Avenue Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7814987",
+   "longitude": "-74.24294987",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000409,
+   "name": "US-9 @ Aldrich Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.15545616",
+   "longitude": "-74.22958726",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000512,
+   "name": "US-1&9 Truck @ Broadway Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73719002",
+   "longitude": "-74.07815304",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000528,
+   "name": "NJ-120 @ Washington Facing Ramp to NJ-120 South",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81758201",
+   "longitude": "-74.06791382",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000645,
+   "name": "NJ-3 West of Bloomfield Avenue Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.841883",
+   "longitude": "-74.164519",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 137,
+   "name": "MM 044.2 North of Interchange 5",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.026283",
+   "longitude": "-74.81831",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 330,
+   "name": "US-1&9 Truck @ Broadway Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73719002",
+   "longitude": "-74.07815304",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 413,
+   "name": "I-280 @ Day Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.77025013",
+   "longitude": "-74.23098561",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 478,
+   "name": "MM 4.4 Hudson County Ext. E. of Int. 14A",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.69349",
+   "longitude": "-74.08223",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 513,
+   "name": "I-287 @ Easton Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.53906143",
+   "longitude": "-74.514945",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1196,
+   "name": "US-22 @ Vosseler Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.57669991",
+   "longitude": "-74.54382271",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1214,
+   "name": "NJ-440 @ Danforth Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.70645004",
+   "longitude": "-74.09993728",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10390,
+   "name": "I-80 @ US-202 / Parsippany Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86508507",
+   "longitude": "-74.42391531",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11160,
+   "name": "US-1&9 @ Park Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.64368439",
+   "longitude": "-74.22826385",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11500,
+   "name": "I-78 @ Glenside Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.69755936",
+   "longitude": "-74.36711933",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000010,
+   "name": "NJ-29 @ Southbound Tunnel Entrance",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.20109955",
+   "longitude": "-74.75907655",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000128,
+   "name": "US-1 @ Scudders Mill Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.34380612",
+   "longitude": "-74.622807",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000258,
+   "name": "NJ-38 @ Marter Avenue Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.96592289",
+   "longitude": "-74.91846261",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000299,
+   "name": "NJ-70 @ Eugenia Drive Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.90054118",
+   "longitude": "-74.84032818",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000340,
+   "name": "I-195 @ West Of Old Tavern Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.16569708",
+   "longitude": "-74.1752678",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000356,
+   "name": "I-295 Southbound Tunnel Exit to NJ-42 Southbound / Aljo Wall",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87833731",
+   "longitude": "-75.1032136",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000412,
+   "name": "NJ-18 @ Rues Lane",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.42120017",
+   "longitude": "-74.37631975",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000420,
+   "name": "US-130 @ Uhler Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.06876841",
+   "longitude": "-74.86910334",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000431,
+   "name": "US-46 @ I-80 East Side Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.85971",
+   "longitude": "-74.365633",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000504,
+   "name": "NJ-120 @ South of Gotham Parkway Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.820971",
+   "longitude": "-74.068673",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000516,
+   "name": "US-9 @ Aldrich Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.15545616",
+   "longitude": "-74.22958726",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000609,
+   "name": "NJ-3 East of Bloomfield Avenue Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.838845",
+   "longitude": "-74.157381",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000700,
+   "name": "NJ-17 @ The Meadows Plaza Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.817798",
+   "longitude": "-74.102753",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 157,
+   "name": "MM 053.5 North of Interchange 7",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.125168",
+   "longitude": "-74.7014",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 510,
+   "name": "I-280 @ Garden State Parkway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.75775689",
+   "longitude": "-74.20385161",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 600,
+   "name": "MM 4.96 Hudson County Ext. W. of Int. 14B",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.69944",
+   "longitude": "-74.07119",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 751,
+   "name": "I-287 @ NJ-28",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.56692908",
+   "longitude": "-74.55483598",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1198,
+   "name": "US-22 @ Sebrings Mill Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.58577732",
+   "longitude": "-74.50888553",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1391,
+   "name": "US-9 @ Georgia Tavern Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.16648297",
+   "longitude": "-74.23685415",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11150,
+   "name": "US-1&9 @ Bacheller Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.64799177",
+   "longitude": "-74.22437697",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12020,
+   "name": "NJ-73 @ North of Evesham Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87862076",
+   "longitude": "-74.92199862",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12540,
+   "name": "I-295 @ NJ-38",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.96682813",
+   "longitude": "-74.9111423",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13030,
+   "name": "I-195 @ County Road 547 / Lakewood Farmingdale Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.16353617",
+   "longitude": "-74.15294933",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 15100,
+   "name": "NJ-21 @ North of Park Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81491319",
+   "longitude": "-74.13906282",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000129,
+   "name": "US-1 @ Forrestal Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.34976736",
+   "longitude": "-74.61555101",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000189,
+   "name": "US-1&9 Truck @ Charlotte Circle Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73916176",
+   "longitude": "-74.07346103",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000241,
+   "name": "NJ-29 @ Cass Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.20467465",
+   "longitude": "-74.76136787",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000300,
+   "name": "NJ-70 @ Eugenia Drive Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.90054221",
+   "longitude": "-74.84032549",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000413,
+   "name": "NJ-18 @ Arther Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.434133",
+   "longitude": "-74.388609",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000421,
+   "name": "US-130 @ Wood Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.07123692",
+   "longitude": "-74.85866538",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000432,
+   "name": "US-46 @ I-80 East Side Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.85971",
+   "longitude": "-74.365633",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000541,
+   "name": "I-295 Southbound Tunnel Exit to NJ-42 Southbound / Aljo Wall",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87833731",
+   "longitude": "-75.1032136",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000610,
+   "name": "NJ-3 East of Bloomfield Avenue Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.838837",
+   "longitude": "-74.157359",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000809,
+   "name": "NJ-17 @ The Meadows Plaza Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.817798",
+   "longitude": "-74.101553",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110002104,
+   "name": "NJ-17 @ NJ-120",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.83314424",
+   "longitude": "-74.08796115",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 66,
+   "name": "NJ-17 @ Highland Cross",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.82229255",
+   "longitude": "-74.09937957",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 90,
+   "name": "MM 5.5 Hudson County Ext E of Interchange 14B",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.70233",
+   "longitude": "-74.06958",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 169,
+   "name": "MM 056.6 North of Interchange 7",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.154716",
+   "longitude": "-74.65967",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 197,
+   "name": "MM 060.4 North of Interchange 7A",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.192467",
+   "longitude": "-74.602585",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 691,
+   "name": "NJ-440 @ NJ-35",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.52928791",
+   "longitude": "-74.28230914",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 799,
+   "name": "I-287 @ US-22 Eastbound",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.57582976",
+   "longitude": "-74.57009739",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1193,
+   "name": "US-22 @ Washington Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.60378828",
+   "longitude": "-74.47565146",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10840,
+   "name": "I-78 @ Vauxhall Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.71454465",
+   "longitude": "-74.28110634",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12040,
+   "name": "NJ-73 @ Greentree Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.90882642",
+   "longitude": "-74.94015208",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12190,
+   "name": "I-76 / NJ 42 to I-295 Northbound Tunnel Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87435554",
+   "longitude": "-75.1006467",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 15110,
+   "name": "NJ-21 @ South of NJ-3",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81967684",
+   "longitude": "-74.13546166",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000008,
+   "name": "NJ-18 @ Milltown Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.4418645",
+   "longitude": "-74.3945506",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000130,
+   "name": "US-1 @ College Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.35214056",
+   "longitude": "-74.61326174",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000242,
+   "name": "NJ-29 @ South Warren Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.20780868",
+   "longitude": "-74.76463121",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000259,
+   "name": "NJ-38 @ Marter Avenue Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.9659069",
+   "longitude": "-74.91845926",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000301,
+   "name": "NJ-70 @ Eayrestown Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.90320439",
+   "longitude": "-74.80609501",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000337,
+   "name": "I-195 @ US-9",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.1662801",
+   "longitude": "-74.23211592",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 10000341,
+   "name": "I-195 @ East Of Allaire Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.16775809",
+   "longitude": "-74.13431816",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000352,
+   "name": "I-287 @ I-80 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86560466",
+   "longitude": "-74.41609156",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000406,
+   "name": "US-1&9 Truck @ NJ-440 / Communipaw Avenue Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.72379481",
+   "longitude": "-74.09045325",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000422,
+   "name": "US-130 @ Logan Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.07544093",
+   "longitude": "-74.8471393",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000433,
+   "name": "US-46 @ East Of I-80",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.858793",
+   "longitude": "-74.357387",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000532,
+   "name": "I-280 @ Garden State Parkway Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.75775689",
+   "longitude": "-74.20385161",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 10000646,
+   "name": "NJ-3 @ West of Passaic Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8338712",
+   "longitude": "-74.14705293",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 97,
+   "name": "MM 068.9 Barnegat Tolls",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.774483",
+   "longitude": "-74.245285",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 106,
+   "name": "MM 5.9 Hudson County Ext. Interchange 14C",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.70655",
+   "longitude": "-74.0607",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 735,
+   "name": "NJ-29 @ Calhoun Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.22120219",
+   "longitude": "-74.77648079",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 750,
+   "name": "US-130 @ New Jersey Turnpike",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.10260534",
+   "longitude": "-74.79258269",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1160,
+   "name": "NJ-138 @ Garden State Parkway Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.17036051",
+   "longitude": "-74.10168643",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1199,
+   "name": "US-22 @ North Drive",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.63150077",
+   "longitude": "-74.43025675",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10680,
+   "name": "I-78 @ Lyons Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.71355825",
+   "longitude": "-74.22363374",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11130,
+   "name": "US-1&9 @ Maple Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.65441987",
+   "longitude": "-74.21158932",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12050,
+   "name": "NJ-73 @ Church Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.92333119",
+   "longitude": "-74.94843739",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14070,
+   "name": "US-9 @ Elton Adelphia Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.22124898",
+   "longitude": "-74.26660582",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000131,
+   "name": "US-1 @ College Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.35640961",
+   "longitude": "-74.60740961",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000280,
+   "name": "US-46 @ West Of New Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.85826",
+   "longitude": "-74.354079",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000302,
+   "name": "NJ-70 @ Eayrestown Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.90321056",
+   "longitude": "-74.80617011",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000414,
+   "name": "NJ-18 @ Tices Lane",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.45677751",
+   "longitude": "-74.40076946",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000533,
+   "name": "I-280 @ Garden State Parkway Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.75775689",
+   "longitude": "-74.20385161",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000647,
+   "name": "NJ-3 @ West of Main Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8300452",
+   "longitude": "-74.13910827",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110000231,
+   "name": "NJ-3 @ NJ-21 - Facing NJ-21 South",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.823788",
+   "longitude": "-74.12513",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13,
+   "name": "US-22 @ Park Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.65326733",
+   "longitude": "-74.40372917",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 195,
+   "name": "MM 060.4 North of Interchange 7A Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.194485",
+   "longitude": "-74.60837",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 801,
+   "name": "I-287 @ Cedarbrook Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.62709705",
+   "longitude": "-74.64138132",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10400,
+   "name": "I-287 @ I-80 Camera #3",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8649986",
+   "longitude": "-74.41714229",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11340,
+   "name": "NJ-18 @ Edgeboro Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.46381718",
+   "longitude": "-74.40446335",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12060,
+   "name": "NJ-73 @ New Jersey Turnpike",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.92981283",
+   "longitude": "-74.95878032",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13040,
+   "name": "NJ-29 @ Sullivan Way",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.23728614",
+   "longitude": "-74.80286567",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 15080,
+   "name": "NJ-17 @ Moonachie Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.844232",
+   "longitude": "-74.079572",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 15120,
+   "name": "NJ-21 @ North of NJ-3",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.83265784",
+   "longitude": "-74.12302507",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000003,
+   "name": "I-78 @ Elizabeth Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.71276848",
+   "longitude": "-74.19956183",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000132,
+   "name": "US-1 @ College Road Camera #3",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.35640817",
+   "longitude": "-74.60741363",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000192,
+   "name": "US-1&9 Truck @ Tonnelle Circle Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73915189",
+   "longitude": "-74.06538436",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000205,
+   "name": "US-9 @ NJ-35",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.47771409",
+   "longitude": "-74.29036016",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000281,
+   "name": "US-46 @ New Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.858369",
+   "longitude": "-74.349585",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000303,
+   "name": "NJ-70 @ US-206 Circle",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.8871358",
+   "longitude": "-74.74122264",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000343,
+   "name": "US-130 @ US-206 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.14179864",
+   "longitude": "-74.70337821",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000443,
+   "name": "US-1&9 @ East Jersey Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.663299",
+   "longitude": "-74.20608042",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000534,
+   "name": "I-280 @ Garden State Parkway Camera #3",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.75775689",
+   "longitude": "-74.20385161",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 63,
+   "name": "MM 067.7 North of Interchange 8",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.2661",
+   "longitude": "-74.51363",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 562,
+   "name": "MM 082.3 North of Exit 82",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.963234",
+   "longitude": "-74.20652",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1207,
+   "name": "US-22 @ Glenside Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.66655709",
+   "longitude": "-74.38357911",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11110,
+   "name": "US-1&9 @ Bond Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.66773856",
+   "longitude": "-74.20332597",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11330,
+   "name": "NJ-18 @ New Jersey Turnpike",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.47405859",
+   "longitude": "-74.40929002",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12070,
+   "name": "NJ-73 @ I-295",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.93562921",
+   "longitude": "-74.96679483",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12600,
+   "name": "I-295 @ Devon Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87228388",
+   "longitude": "-75.07400781",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000133,
+   "name": "US-1 @ MM 14.29",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.36323473",
+   "longitude": "-74.59927374",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000354,
+   "name": "I-287 @ I-80 Camera #4",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86570681",
+   "longitude": "-74.41439118",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000434,
+   "name": "US-46 @ New Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.858369",
+   "longitude": "-74.349585",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000513,
+   "name": "US-1&9 Truck @ Pulaski Skyway @ Kearny Ramp",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.734849",
+   "longitude": "-74.1146801",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000517,
+   "name": "US-9 @ NJ-79 / Schanck Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.24013401",
+   "longitude": "-74.27539524",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000535,
+   "name": "I-280 @ Garden State Parkway Camera #4",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.75775689",
+   "longitude": "-74.20385161",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 10000702,
+   "name": "NJ-17 @ North of Moonachie Road Overpass",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.844232",
+   "longitude": "-74.078372",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110001039,
+   "name": "NJ-3 @ NJ-21",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8239838",
+   "longitude": "-74.12516084",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 101,
+   "name": "MM 083.3 North of Exit 82A",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.984184",
+   "longitude": "-74.21275",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 317,
+   "name": "MM 071.4 South of Molly Pitcher Service Area",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.3171",
+   "longitude": "-74.48994",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 753,
+   "name": "NJ-18 @ Naricon Place",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.48132853",
+   "longitude": "-74.41132352",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10810,
+   "name": "I-78 @ I-287 Southbound",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.64272418",
+   "longitude": "-74.64471239",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11100,
+   "name": "US-1&9 @ Louisa Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.67561559",
+   "longitude": "-74.19894367",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12080,
+   "name": "NJ-73 @ NJ-38",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.94362299",
+   "longitude": "-74.9787918",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12610,
+   "name": "I-295 @ Tillman Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.87168165",
+   "longitude": "-75.02673078",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14160,
+   "name": "I-295 @ US 130 (Bordentown)",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.13506717",
+   "longitude": "-74.71559826",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000134,
+   "name": "US-1 @ MM 14.32",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.36380363",
+   "longitude": "-74.59905121",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000194,
+   "name": "NJ-3 @ NJ-21 - Facing NJ-3 West",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.823972",
+   "longitude": "-74.123961",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000223,
+   "name": "US-22 @ Chestnut Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.6917528",
+   "longitude": "-74.28238213",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000283,
+   "name": "US-46 @ Bloomfield Avenue Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.859665",
+   "longitude": "-74.32445",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000518,
+   "name": "US-9 @ NJ-79 / Schanck Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.24013401",
+   "longitude": "-74.27539524",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000536,
+   "name": "I-280 @ East of Garden State Parkway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.75553131",
+   "longitude": "-74.20001221",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 10000703,
+   "name": "NJ-17 @ Fiesta Banquet Hall",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8455505",
+   "longitude": "-74.0782857",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 113,
+   "name": "MM 084.7 Toms River Toll Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.996334",
+   "longitude": "-74.20734",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 508,
+   "name": "I-280 @ 6th Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.75235347",
+   "longitude": "-74.18851829",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10360,
+   "name": "I-80 @ Montville Township",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86523508",
+   "longitude": "-74.3322452",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10800,
+   "name": "I-287 @ Mount Airy Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.68915965",
+   "longitude": "-74.57743904",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11090,
+   "name": "US-1&9 @ North Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.67908478",
+   "longitude": "-74.19538879",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11350,
+   "name": "NJ-18 @ US-1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.48472251",
+   "longitude": "-74.4200193",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12090,
+   "name": "NJ-73 @ Fox Meadow Drive",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.94877254",
+   "longitude": "-74.98575652",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12360,
+   "name": "US-1 @ Independence Way",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.36135459",
+   "longitude": "-74.60178943",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12640,
+   "name": "US-130 @ NJ 33 (Robbinsville Township)",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.21618961",
+   "longitude": "-74.6205274",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12990,
+   "name": "NJ-70 @ County Road 539 / Warren Grove Whiting Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.96056103",
+   "longitude": "-74.39203721",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14040,
+   "name": "US-9 @ Ryan Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.29343677",
+   "longitude": "-74.2989299",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000224,
+   "name": "US-22 @ Vauxhall Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.697356",
+   "longitude": "-74.251244",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000435,
+   "name": "US-46 @ Bloomfield Avenue Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.859665",
+   "longitude": "-74.32445",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000704,
+   "name": "NJ-17 @ Franklin / Malcolm Avenue Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8572438",
+   "longitude": "-74.0696743",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110000263,
+   "name": "NJ-3 @ NJ-21 - Facing Ramp to NJ-21 South",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.82475142",
+   "longitude": "-74.125761",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 75,
+   "name": "MM 073.7 Interchange 8A",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.348366",
+   "longitude": "-74.478714",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 111,
+   "name": "MM 084.9 North of Toms River Toll Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.998184",
+   "longitude": "-74.2053",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10790,
+   "name": "I-287 @ North Maple Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.72969298",
+   "longitude": "-74.53901801",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11080,
+   "name": "US-1&9 @ McClellan Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.69229849",
+   "longitude": "-74.19034055",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11320,
+   "name": "US-1 @ NJ-18",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.48285717",
+   "longitude": "-74.4183208",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11530,
+   "name": "I-280 @ NJ-21",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.74794289",
+   "longitude": "-74.16734108",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12100,
+   "name": "NJ-73 @ High Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.97180452",
+   "longitude": "-75.00737399",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12490,
+   "name": "I-295 @ County Road 561 / Haddonfield-Berlin Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.88088668",
+   "longitude": "-75.00989631",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14030,
+   "name": "US-9 @ Taylors Mill Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.3026711",
+   "longitude": "-74.30401468",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000135,
+   "name": "US-1 @ MM 014.50",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.36553504",
+   "longitude": "-74.59691668",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000285,
+   "name": "US-46 @ West Of Gardner Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.864056",
+   "longitude": "-74.318907",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000305,
+   "name": "NJ-70 @ Beckerville Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.0070376",
+   "longitude": "-74.33357829",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000316,
+   "name": "I-78 & US-1&9 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.70989115",
+   "longitude": "-74.16814006",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000648,
+   "name": "NJ-3 @ Riverside Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.822224",
+   "longitude": "-74.122985",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000705,
+   "name": "NJ-17 @ Franklin / Malcolm Avenue Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.857277",
+   "longitude": "-74.069649",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 108,
+   "name": "MM 083.3 Interchange 9",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.475765",
+   "longitude": "-74.40855",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 120,
+   "name": "MM 090.0 South of Exit 89",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.06402",
+   "longitude": "-74.16372",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 136,
+   "name": "US-22 @ Liberty Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.69937964",
+   "longitude": "-74.23106678",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 927,
+   "name": "US-1 @ Ridge Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.36648338",
+   "longitude": "-74.59595653",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1476,
+   "name": "I-280 @ Exit 16",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.74265288",
+   "longitude": "-74.14493921",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10780,
+   "name": "I-287 @ James Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.77269236",
+   "longitude": "-74.47957961",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11380,
+   "name": "US-1&9 @ EWR Airport Local Lanes",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.69086075",
+   "longitude": "-74.19084167",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12110,
+   "name": "NJ-73 @ US-130",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.98338754",
+   "longitude": "-75.01729755",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14020,
+   "name": "US-9 @ Texas Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.36111465",
+   "longitude": "-74.30515099",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000306,
+   "name": "NJ-70 @ Beckerville Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.00703324",
+   "longitude": "-74.33359572",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000317,
+   "name": "I-78 & US-1&9 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.70989331",
+   "longitude": "-74.16813603",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000613,
+   "name": "NJ-3 @ Orient Way Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81383635",
+   "longitude": "-74.10858598",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110001009,
+   "name": "NJ-17 @ South of Williams Avenue Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8635308",
+   "longitude": "-74.06458992",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 121,
+   "name": "MM 093.0 South of Exit 91",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.101616",
+   "longitude": "-74.139084",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 126,
+   "name": "MM 083.4 North of Interchange 9",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.478268",
+   "longitude": "-74.4093",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 784,
+   "name": "I-280 @ County Road 508 / Newark-Jersey City Turnpike",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.74564336",
+   "longitude": "-74.13470207",
+   "stopCameraFlag": true
+  },
+  {
+   "id": 930,
+   "name": "US-1 @ Ridge Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.36642269",
+   "longitude": "-74.59601688",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1049,
+   "name": "NJ-18 @ River Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.51548252",
+   "longitude": "-74.45733424",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10490,
+   "name": "I-287 @ NJ-124",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.78841782",
+   "longitude": "-74.4691391",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11390,
+   "name": "US-1&9 @ EWR Airport Express Lanes",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.693573",
+   "longitude": "-74.18780518",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12120,
+   "name": "NJ-73 @ Hylton Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.9923617",
+   "longitude": "-75.02735022",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000307,
+   "name": "NJ-70 @ Garden State Parkway Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.05430804",
+   "longitude": "-74.17201163",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000357,
+   "name": "I-295 @ Chapel Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.91879135",
+   "longitude": "-74.97960175",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000519,
+   "name": "US-9 @ NJ-18",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.36923302",
+   "longitude": "-74.30633258",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000697,
+   "name": "NJ-17 @ South of Williams Avenue Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.863531",
+   "longitude": "-74.06339",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110000204,
+   "name": "NJ-3 @ Orient Way Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8137989569065",
+   "longitude": "-74.1084139579788",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 128,
+   "name": "MM 088.1 Interchange 10",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.52505",
+   "longitude": "-74.342766",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1051,
+   "name": "NJ-18 @ Metlars Lane",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.52362237",
+   "longitude": "-74.45028105",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10770,
+   "name": "I-287 @ NJ-24",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81059387",
+   "longitude": "-74.44756328",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11070,
+   "name": "US-1&9 @ Haynes Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.70193993",
+   "longitude": "-74.18551478",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11370,
+   "name": "US-130 @ Independence Boulevard",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.45326189",
+   "longitude": "-74.45845357",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12130,
+   "name": "NJ-73 @ Tacony Palmyra Bridge",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.00158878",
+   "longitude": "-75.03627948",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000001,
+   "name": "I-295 @ North of Chapel Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.925962",
+   "longitude": "-74.976142",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000138,
+   "name": "US-1 @ MM 014.87",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.36945493",
+   "longitude": "-74.59171342",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000308,
+   "name": "NJ-70 @ Garden State Parkway Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.05430804",
+   "longitude": "-74.17201163",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000698,
+   "name": "NJ-17 @ South of Williams Avenue Camera #3",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.864431",
+   "longitude": "-74.06459",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 129,
+   "name": "MM 095.2 North of Exit 91",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.130676",
+   "longitude": "-74.12353",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 148,
+   "name": "MM 088.3 North of Interchange 10",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.52527",
+   "longitude": "-74.33749",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 856,
+   "name": "NJ-18 @ Hoes Lane West",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.53137059",
+   "longitude": "-74.46866715",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11310,
+   "name": "US-1 @ US-130 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.46275982",
+   "longitude": "-74.4542889",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12510,
+   "name": "I-295 @ County Road 616 / Church Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.92930511",
+   "longitude": "-74.97324234",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12970,
+   "name": "NJ-70 @ Manasquan River Bridge",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.09740885",
+   "longitude": "-74.08560461",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14010,
+   "name": "US-9 @ Spring Valley Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.37368291",
+   "longitude": "-74.30668941",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000139,
+   "name": "US-1 @ MM 014.88",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.36964705",
+   "longitude": "-74.59193956",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000699,
+   "name": "NJ-17 @ South of Williams Avenue Camera #4",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.863531",
+   "longitude": "-74.06579",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110001043,
+   "name": "NJ-3 @ NJ-17 - NJ-3 Ramp to Rutherford Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81100251",
+   "longitude": "-74.10198611",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 155,
+   "name": "MM 090.6 Interchange 11 Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.54055",
+   "longitude": "-74.30105",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11410,
+   "name": "US-1&9 @ I-78",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7093563",
+   "longitude": "-74.17676965",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14000,
+   "name": "US-9 @ Perrine Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.43550254",
+   "longitude": "-74.30114335",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000140,
+   "name": "US-1 @ MM 015.12",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.37218524",
+   "longitude": "-74.58838467",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000218,
+   "name": "NJ-18 @ Centennial Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.55022815",
+   "longitude": "-74.47610292",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000713,
+   "name": "NJ-17 @ South of Williams Avenue Camera #5",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.862631",
+   "longitude": "-74.06459",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 130,
+   "name": "MM 098.6 I-195",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.174133",
+   "longitude": "-74.1008",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 397,
+   "name": "MM 090.7 North of Interchange 11",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.5432",
+   "longitude": "-74.3006",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11400,
+   "name": "US-1&9 @ EWR Newark Airport",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.70813687",
+   "longitude": "-74.17152524",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12520,
+   "name": "I-295 @ Fellowship Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.94020513",
+   "longitude": "-74.95253789",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14100,
+   "name": "US-9 @ Ernston Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.45397368",
+   "longitude": "-74.29684801",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000141,
+   "name": "US-1 @ MM 015.15",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.37242607",
+   "longitude": "-74.58848568",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000219,
+   "name": "NJ-18 @ Possumtown Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.55156405",
+   "longitude": "-74.48185024",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000353,
+   "name": "I-287 @ I-80 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86560896",
+   "longitude": "-74.41609693",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000617,
+   "name": "NJ-3 @ East of NJ-17 - NJ-3 Facing East",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81047399",
+   "longitude": "-74.10295682",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000707,
+   "name": "NJ-17 @ Ramp to US-46 East Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86714106",
+   "longitude": "-74.06420111",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 142,
+   "name": "MM 099.29 South of Garden State Parkway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.1933",
+   "longitude": "-74.0997",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12530,
+   "name": "I-295 @ South Church Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.94767724",
+   "longitude": "-74.93332464",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000142,
+   "name": "US-1 @ MM 015.45",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.37555",
+   "longitude": "-74.584272",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000618,
+   "name": "NJ-3 @ East of NJ-17 - NJ-3 Facing West",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.81014705",
+   "longitude": "-74.10161518",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 139,
+   "name": "MM 100.3 North of Garden State Parkway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.199818",
+   "longitude": "-74.09967",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 164,
+   "name": "MM 090.8 Interchange 11",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.54165",
+   "longitude": "-74.294586",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1475,
+   "name": "NJ-440 @ US-9 / Garden State Parkway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.51952377",
+   "longitude": "-74.29904041",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10380,
+   "name": "I-80 @ I-287",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86377832",
+   "longitude": "-74.41573811",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000143,
+   "name": "US-1 @ MM 15.47",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.37589296",
+   "longitude": "-74.58425747",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 105,
+   "name": "MM 095.9 Interchange 12",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.593067",
+   "longitude": "-74.2301",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 143,
+   "name": "MM 103.8 South of Asbury Toll Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.24805",
+   "longitude": "-74.082565",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12550,
+   "name": "I-295 @ Marne Highway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.97600439",
+   "longitude": "-74.89980143",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000144,
+   "name": "US-1 @ MM 015.70",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.37825",
+   "longitude": "-74.58099911",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000314,
+   "name": "I-78 @ US-1/9 Camera #3",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.71160206",
+   "longitude": "-74.17029798",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 115,
+   "name": "MM 099.4 Interchange 13",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.641582",
+   "longitude": "-74.21132",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 141,
+   "name": "MM 104.2 North of Asbury Toll Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.25485",
+   "longitude": "-74.0801",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12560,
+   "name": "I-295 @ Hartford Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.98600106",
+   "longitude": "-74.88842702",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000145,
+   "name": "US-1 @ MM 015.74",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.37874382",
+   "longitude": "-74.58081605",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000315,
+   "name": "I-78 & US-1&9 Camera #4",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.71024194",
+   "longitude": "-74.16833183",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000620,
+   "name": "NJ-3 @ East of NJ-17, Ramp to NJ 3 East Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.810249",
+   "longitude": "-74.098282",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 7,
+   "name": "MM 106.3 Exit 105 Entrance Ramp",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.284084",
+   "longitude": "-74.08532",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 506,
+   "name": "US-1&9 @ Roanoke Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.72874938",
+   "longitude": "-74.13536622",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 969,
+   "name": "US-1 @ Raymond Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.37966216",
+   "longitude": "-74.57925563",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10050,
+   "name": "I-80 @ Hudson Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86679333",
+   "longitude": "-74.03912908",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12880,
+   "name": "I-295 @ Creek Road / Exit 43",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "39.9918954",
+   "longitude": "-74.87761346",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000198,
+   "name": "NJ-3 @ New Jersey Turnpike Ramp Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.80993299",
+   "longitude": "-74.08288208",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 125,
+   "name": "MM 100.0 North of Interchange 13",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.64735",
+   "longitude": "-74.20316",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 135,
+   "name": "MM 101.6 Interchange 13A Entering TPK",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.666767",
+   "longitude": "-74.18356",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 151,
+   "name": "MM 106.3 Exit 105 Toll Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.284866",
+   "longitude": "-74.083",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 933,
+   "name": "US-1 @ Raymond Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.37970705",
+   "longitude": "-74.57920065",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10440,
+   "name": "I-80 @ Teaneck Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86592484",
+   "longitude": "-74.01880506",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14140,
+   "name": "I-295 @ County Road 541 / Mount Holly Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.04482264",
+   "longitude": "-74.83421087",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000180,
+   "name": "US-1&9 @ Raymond Boulevard",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73467388",
+   "longitude": "-74.12486738",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000199,
+   "name": "NJ-3 @ New Jersey Turnpike Ramp Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.80993284",
+   "longitude": "-74.08288297",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 147,
+   "name": "MM 101.6 Interchange 13A Exiting TPK",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.67",
+   "longitude": "-74.183815",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10060,
+   "name": "I-80 @ I-95",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86374519",
+   "longitude": "-74.0117027",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14150,
+   "name": "I-295 @ County Road 656 / Florence Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.08349778",
+   "longitude": "-74.76101172",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000146,
+   "name": "US-1 @ MM 016.00",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.38151445",
+   "longitude": "-74.57738688",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000621,
+   "name": "NJ-3 @ NJTA 16W Overpass Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8085732414985",
+   "longitude": "-74.0800749570706",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 153,
+   "name": "MM 110.4 Exit 109",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.339718",
+   "longitude": "-74.1014",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 159,
+   "name": "MM 101.8 North of Interchange 13A",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.667618",
+   "longitude": "-74.17992",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10130,
+   "name": "US-46 @ Green Street",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.86351874",
+   "longitude": "-74.0611738",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12910,
+   "name": "I-295 @ I-195",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.18425728",
+   "longitude": "-74.72222668",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000147,
+   "name": "US-1 @ MM 016.22",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.38225522",
+   "longitude": "-74.57603726",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000622,
+   "name": "NJ-3 @ NJTA 16W Overpass Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8084911560386",
+   "longitude": "-74.0799473689887",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 149,
+   "name": "MM 115.9 South of Exit 116",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.389416",
+   "longitude": "-74.178764",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 167,
+   "name": "MM 103.4 South of Interchange 14",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.687984",
+   "longitude": "-74.163765",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12400,
+   "name": "I-295 @ NJ-33 / Nottingham Way",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.23232255",
+   "longitude": "-74.70024291",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000148,
+   "name": "US-1 @ MM 016.29",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.38454889",
+   "longitude": "-74.57373601",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000181,
+   "name": "US-1&9 @ Jacobus Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73496724",
+   "longitude": "-74.11470361",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000664,
+   "name": "NJ-3 @ MetLife Stadium Sign",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.80758249",
+   "longitude": "-74.07714657",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 161,
+   "name": "MM 116.2 Exit 116",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.3946",
+   "longitude": "-74.17893",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 177,
+   "name": "MM 104.5 South of Interchange 14",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.703266",
+   "longitude": "-74.15628",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13050,
+   "name": "I-295 @ Sloan Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.25146474",
+   "longitude": "-74.69684285",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000149,
+   "name": "US-1 @ Promenade Boulevard Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.38649974",
+   "longitude": "-74.57147321",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000183,
+   "name": "US-1&9 @ Central Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73462808",
+   "longitude": "-74.10667735",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000623,
+   "name": "NJ-3 @ Met Center Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.806615",
+   "longitude": "-74.076407",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 163,
+   "name": "MM 116.6 North of Exit 116",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.398766",
+   "longitude": "-74.1849",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13000,
+   "name": "I-295 @ Lawrence Station Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.27030305",
+   "longitude": "-74.69146451",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000150,
+   "name": "US-1 @ Promenade Boulevard Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.38651608",
+   "longitude": "-74.57147679",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000184,
+   "name": "US-1&9 @ Hackensack River",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73485114",
+   "longitude": "-74.09811025",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110002273,
+   "name": "NJ-3 @ Met Center Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8069037859719",
+   "longitude": "-74.0767235160425",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 16,
+   "name": "MM 118.5 South of Exit 117 #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.421066",
+   "longitude": "-74.20641",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 146,
+   "name": "MM 106.5 E Spur North of Southern Mixing Bowl",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.724415",
+   "longitude": "-74.1331",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 165,
+   "name": "MM 118.5 South of Exit 117 #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.42215",
+   "longitude": "-74.205635",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1523,
+   "name": "US-1&9 @ Broadway Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73640678",
+   "longitude": "-74.08542655",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10120,
+   "name": "US-46 @ Bergen Turnpike",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.85275044",
+   "longitude": "-74.03423458",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000126,
+   "name": "US-1 @ I-295",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.28281784",
+   "longitude": "-74.69595337",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000151,
+   "name": "US-1 @ Wynwood Drive Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.392047",
+   "longitude": "-74.56466445",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 131,
+   "name": "MM 107.1 Eastern Spur Interchange 15E",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.731434",
+   "longitude": "-74.12355",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10070,
+   "name": "US-46 @ New Jersey Turnpike",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.84691096",
+   "longitude": "-74.01830471",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000358,
+   "name": "I-295 @ North of Federal City Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.29220929",
+   "longitude": "-74.76770284",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000452,
+   "name": "US-1&9 @ Broadway Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73790875",
+   "longitude": "-74.07725327",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000510,
+   "name": "US-1 @ Wynwood Drive Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.392047",
+   "longitude": "-74.56466445",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10250,
+   "name": "US-46 @ NJ-93",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.84363188",
+   "longitude": "-74.00595492",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12890,
+   "name": "I-295 @ NJ-31",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.290321",
+   "longitude": "-74.78440508",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000155,
+   "name": "US-1 @ MM 17.13",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.39352222",
+   "longitude": "-74.56287698",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 172,
+   "name": "MM 108.7 W Spur South of Interchange 15W",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.754417",
+   "longitude": "-74.12123",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 175,
+   "name": "MM 121.0 Southbound South of Exit 120",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.434715",
+   "longitude": "-74.25173",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 180,
+   "name": "MM 108.7 E Spur South of Interchange 15W",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.754333",
+   "longitude": "-74.1243",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12620,
+   "name": "I-295 @ Scotch Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.2900317",
+   "longitude": "-74.81143597",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000156,
+   "name": "US-1 @ MM 17.21 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.39195",
+   "longitude": "-74.564298",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000470,
+   "name": "NJ-3 @ NJTA Western Spur Overpass Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8030969695118",
+   "longitude": "-74.0727583954115",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 173,
+   "name": "MM 121.0 Northbound South of Exit 120",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.434982",
+   "longitude": "-74.25145",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000157,
+   "name": "US-1 @ MM 17.21 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.39398",
+   "longitude": "-74.561839",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000190,
+   "name": "US-1&9 Truck @ Charlotte Circle Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73915995",
+   "longitude": "-74.07346153",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000359,
+   "name": "I-295 @ North of Bear Tavern Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.27061473",
+   "longitude": "-74.83523737",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110002276,
+   "name": "NJ-3 @ EB East of Meadowland Park Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7977251018996",
+   "longitude": "-74.0627056274092",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 179,
+   "name": "MM 123.6 North of Garden State Parkway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.46135",
+   "longitude": "-74.28104",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 182,
+   "name": "MM 108.8 Western Spur Interchange 15W",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.75505",
+   "longitude": "-74.11753",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000158,
+   "name": "US-1 @ MM 17.80 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.400262",
+   "longitude": "-74.554599",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000191,
+   "name": "US-1&9 Truck @ Tonnelle Circle Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73914758",
+   "longitude": "-74.06538215",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000632,
+   "name": "NJ-3 @ Wood Avenue Eastbound",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7961880029068",
+   "longitude": "-74.061243014329",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 183,
+   "name": "MM 125.5 South of Raritan Toll Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.4839",
+   "longitude": "-74.30344",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 530,
+   "name": "MM 110.38 W Spur North of Interchange 15W",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.77069",
+   "longitude": "-74.10611",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000159,
+   "name": "US-1 @ MM 17.80 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.402628",
+   "longitude": "-74.551344",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110001038,
+   "name": "NJ-3 @ Wood Avenue Westbound",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.79645676",
+   "longitude": "-74.06139997",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 166,
+   "name": "MM 111.3 Eastern Spur N of Interchange 15X",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.765266",
+   "longitude": "-74.06886",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 254,
+   "name": "MM 126.1 Exit 125",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.490818",
+   "longitude": "-74.30092",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000160,
+   "name": "US-1 @ MM 18.04 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.405022",
+   "longitude": "-74.54875",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000403,
+   "name": "US-1&9 @ Secaucus Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.76107017",
+   "longitude": "-74.05087058",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000634,
+   "name": "NJ-3 @ West of Paterson Plank Road Overpass Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7953366081332",
+   "longitude": "-74.0599230009347",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 168,
+   "name": "MM 111.6 Eastern Spur South of Service Area",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.76882",
+   "longitude": "-74.06666",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 185,
+   "name": "MM 126.8 South of Driscoll Bridge",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.50235",
+   "longitude": "-74.301186",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000161,
+   "name": "US-1 @ MM 18.04 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.407276",
+   "longitude": "-74.545637",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000511,
+   "name": "US-1&9 @ Secaucus Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.76107017",
+   "longitude": "-74.05087058",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000635,
+   "name": "NJ-3 @ West of Paterson Plank Road Overpass Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.794993",
+   "longitude": "-74.059432",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 174,
+   "name": "MM 112.3 E Spur Interchange 16E S of Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.775032",
+   "longitude": "-74.05912",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 372,
+   "name": "MM 127.8 South of Exit 127",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.516624",
+   "longitude": "-74.30082",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 402,
+   "name": "US-1&9 @ NJ-3 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.77351639",
+   "longitude": "-74.04185259",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000162,
+   "name": "US-1 @ MM 18.46 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.408862",
+   "longitude": "-74.544051",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110002281,
+   "name": "NJ-3 @ East of Paterson Plank Road Overpass Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7936509286721",
+   "longitude": "-74.0570087284257",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 6,
+   "name": "MM 129.0 South of Exit 129",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.53266",
+   "longitude": "-74.29833",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 154,
+   "name": "MM 112.3 Eastern Spur Interchange 16E",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.7787",
+   "longitude": "-74.05658",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 403,
+   "name": "US-1&9 @ NJ-3 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.77351154",
+   "longitude": "-74.04185075",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000163,
+   "name": "US-1 @ MM 18.46 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.408862",
+   "longitude": "-74.544051",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 110002282,
+   "name": "NJ-3 @ East of Paterson Plank Road Overpass Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7935230079398",
+   "longitude": "-74.0567282405867",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 739,
+   "name": "MM 112.31 W Spur South of Interchange 16W",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.796665",
+   "longitude": "-74.07989",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000164,
+   "name": "US-1 @ MM 18.68 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.40957",
+   "longitude": "-74.542822",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000638,
+   "name": "NJ-3 @ New Jersey Turnpike Eastern Spur Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7882373306712",
+   "longitude": "-74.0506443097997",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 37,
+   "name": "MM 133.1 South of Colonia Service Area",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.584915",
+   "longitude": "-74.328835",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 176,
+   "name": "MM 112.7 Western Spur Interchange 16W",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.804016",
+   "longitude": "-74.07868",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000165,
+   "name": "US-1 @ MM 18.68 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.416385",
+   "longitude": "-74.534516",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000639,
+   "name": "NJ-3 @ New Jersey Turnpike Eastern Spur Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7883192064857",
+   "longitude": "-74.0507321734601",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 184,
+   "name": "MM 113.8 Western Spur Interchange 18W",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.81155",
+   "longitude": "-74.058784",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 264,
+   "name": "MM 134.2 North of Colonia Service Area",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.599434",
+   "longitude": "-74.31805",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 15030,
+   "name": "NJ-3 @ Paterson Plank Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.78417382",
+   "longitude": "-74.04803818",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000166,
+   "name": "US-1 @ MM 19.34 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.416385",
+   "longitude": "-74.534516",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 41,
+   "name": "MM 136.8 South of Exit 136",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.633366",
+   "longitude": "-74.29747",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 251,
+   "name": "MM 114.0 Western Spur N of Interchange 18W",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.81295",
+   "longitude": "-74.05888",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000167,
+   "name": "US-1 @ MM 19.34 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.416841",
+   "longitude": "-74.534353",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000649,
+   "name": "NJ-3 @ East of Paterson Plank Road Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.782244",
+   "longitude": "-74.046615",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 749,
+   "name": "MM 114.9 Western Spur N of Interchange 18W",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.817856",
+   "longitude": "-74.04354",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 808,
+   "name": "MM 142.7 Union Toll Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.70301",
+   "longitude": "-74.24618",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000168,
+   "name": "US-1 @ MM 19.82 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.421503",
+   "longitude": "-74.528614",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000650,
+   "name": "NJ-3 @ East of Paterson Plank Road Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.782227",
+   "longitude": "-74.046609",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 59,
+   "name": "MM 142.8 Exit 142",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.7039",
+   "longitude": "-74.24578",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 187,
+   "name": "MM 117.2 South of US 46",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.837715",
+   "longitude": "-74.019165",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000169,
+   "name": "US-1 @ MM 19.82 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.421489",
+   "longitude": "-74.528216",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000652,
+   "name": "NJ-3 @ NJ-495 Across from BP Gas Station",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.78061",
+   "longitude": "-74.04696",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 58,
+   "name": "MM 142.8 Exit 142 Tower",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.704216",
+   "longitude": "-74.24525",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 193,
+   "name": "MM 119.9 North of Exit 69",
+   "cameraId": 0,
+   "iconFile": "cctv-red.png",
+   "latitude": "40.868034",
+   "longitude": "-74.000885",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 12370,
+   "name": "US-1 @ Henderson Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.42308566",
+   "longitude": "-74.52647431",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000665,
+   "name": "NJ-3 @ West of NJ-495",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.781391",
+   "longitude": "-74.04697",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 60,
+   "name": "MM 143.1 North of Exit 142 Entering PKY",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.709167",
+   "longitude": "-74.247215",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000170,
+   "name": "US-1 @ MM 20.28 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.425664",
+   "longitude": "-74.523527",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 61,
+   "name": "MM 143.1 North of Exit 142 Exiting PKY",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.709282",
+   "longitude": "-74.24882",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000171,
+   "name": "US-1 @ MM 20.28 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.425664",
+   "longitude": "-74.523527",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 83,
+   "name": "MM 145.7 North of Exit 144",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.738968",
+   "longitude": "-74.2173",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000172,
+   "name": "US-1 @ MM 20.61 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.426396",
+   "longitude": "-74.522198",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 78,
+   "name": "MM 145.8 North of Exit 144",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.73987",
+   "longitude": "-74.21599",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000173,
+   "name": "US-1 @ MM 20.61 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.430054",
+   "longitude": "-74.517765",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 70,
+   "name": "MM 147.0 Exit 145 Entering PKY",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.755",
+   "longitude": "-74.20862",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000174,
+   "name": "US-1 @ MM 20.94 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.433215",
+   "longitude": "-74.514299",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 69,
+   "name": "MM 147.0 Exit 145 Exiting PKY",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.755085",
+   "longitude": "-74.207535",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000175,
+   "name": "US-1 @ MM 20.94 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.433843",
+   "longitude": "-74.513189",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 76,
+   "name": "MM 147.0 Exit 145 Sussex Ave Overpass",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.756",
+   "longitude": "-74.20578",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11300,
+   "name": "US-1 @ US-130 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.462806",
+   "longitude": "-74.45599",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 73,
+   "name": "MM 147.0 Exit 145 Overpass",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.756317",
+   "longitude": "-74.21008",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 92,
+   "name": "MM 148.5 North of Exit 147",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.776516",
+   "longitude": "-74.20159",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 896,
+   "name": "US-1 @ Ryders Lane",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.47576018",
+   "longitude": "-74.42686225",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 95,
+   "name": "MM 149.0 Northbound North of Exit 148",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.784416",
+   "longitude": "-74.200615",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 100,
+   "name": "MM 149.2 Southbound North of Exit 148",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.786415",
+   "longitude": "-74.200134",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 104,
+   "name": "MM 150.6 South of Essex Toll Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.803375",
+   "longitude": "-74.18479",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 607,
+   "name": "US-1 @ Woodbridge Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.50058206",
+   "longitude": "-74.40595896",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 102,
+   "name": "MM 150.8 North of Essex Toll Plaza",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.8069",
+   "longitude": "-74.18297",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11440,
+   "name": "US-1 @ Old Post Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.51092755",
+   "longitude": "-74.3856181",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 96,
+   "name": "MM 152.6 Southbound North of Exit 151",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.829334",
+   "longitude": "-74.17785",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 98,
+   "name": "MM 152.5 Northbound North of Exit 151",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.82987",
+   "longitude": "-74.17702",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11270,
+   "name": "US-1 @ Menlo Park Drive",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.54310716",
+   "longitude": "-74.33423579",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000177,
+   "name": "US-1 @ North Lafayette Avenue Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.54681375",
+   "longitude": "-74.32737757",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10000178,
+   "name": "US-1 @ North Lafayette Avenue Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.54681664",
+   "longitude": "-74.3273769",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11280,
+   "name": "US-1 @ Garden State Parkway",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.55273373",
+   "longitude": "-74.31758559",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 13010,
+   "name": "US-1 @ Gill Lane",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.55744142",
+   "longitude": "-74.30859658",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 324,
+   "name": "NJ-440 @ NJ-185 Camera #1",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.68452063",
+   "longitude": "-74.09368312",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 332,
+   "name": "NJ-440 @ NJ-185 Camera #2",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.68452058",
+   "longitude": "-74.09368378",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 737,
+   "name": "NJ-36 @ NJ-71",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.29557037",
+   "longitude": "-74.02883148",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 760,
+   "name": "US-130 @ NJ-133",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.28244695",
+   "longitude": "-74.52882203",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 1396,
+   "name": "NJ-82 @ NJ-439 / North Avenue",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.67649401",
+   "longitude": "-74.22754669",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 10460,
+   "name": "I-287 @ NJ-27",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.5337429",
+   "longitude": "-74.37711638",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11140,
+   "name": "US-1&9 @ NJ-439 / Bayway Circle",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.6505444",
+   "longitude": "-74.22093924",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11170,
+   "name": "US-1&9 @ I-278",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.64018519",
+   "longitude": "-74.23071072",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 11360,
+   "name": "NJ-18 @ NJ-27",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.49758177",
+   "longitude": "-74.43983734",
+   "stopCameraFlag": false
+  },
+  {
+   "id": 14060,
+   "name": "US-9 @ NJ-79 / Schanck Road",
+   "cameraId": 0,
+   "iconFile": "cctv-green.png",
+   "latitude": "40.24013401",
+   "longitude": "-74.27539524",
+   "stopCameraFlag": false
+  }
+ ]
+}

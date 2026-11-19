@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "name": "Zonas locales verificadas",
+    "description": "Agrupación local de cámaras públicas reales del inventario oficial 511NJ. No se crean cámaras nuevas: se agrupan cámaras oficiales ya verificadas por proximidad geográfica al centro municipal y por su nombre oficial de vía.",
+    "source": "511NJ oficial (data/nj_cameras.json) + distancia Haversine calculada desde el centro de cada municipio",
+    "official": "https://511nj.org/camera",
+    "verifiedAt": "2026-11-18",
+    "method": "Se incluyen cámaras 511NJ con stream presente, enabled=true y distancia <= 8 km del centro municipal. La distancia es informativa y se calcula desde el GPS del usuario en la app.",
+    "note": "La zona es una agrupación informativa, no una división administrativa oficial. El nombre de la cámara, la ruta y el stream permanecen intactos tal como los publica 511NJ."
+  },
+  "zones": [
+    {
+      "id": "somerville",
+      "name": "Somerville",
+      "label": "Somerville y alrededores",
+      "center": { "lat": 40.6209, "lon": -74.6085 },
+      "radiusKm": 7.6,
+      "cameraIds": [
+        "nj-801",
+        "nj-10810",
+        "nj-10820",
+        "nj-1400",
+        "nj-1406",
+        "nj-1399",
+        "nj-799",
+        "nj-800",
+        "nj-10000222",
+        "nj-1195"
+      ],
+      "distanceKm": {
+        "nj-801": 2.86,
+        "nj-10810": 3.9,
+        "nj-10820": 4.05,
+        "nj-1400": 4.43,
+        "nj-1406": 4.69,
+        "nj-1399": 5.47,
+        "nj-799": 5.97,
+        "nj-800": 5.95,
+        "nj-10000222": 6.24,
+        "nj-1195": 6.93
+      }
+    },
+    {
+      "id": "raritan",
+      "name": "Raritan",
+      "label": "Raritan y corredor US-22",
+      "center": { "lat": 40.5737, "lon": -74.6393 },
+      "radiusKm": 6.4,
+      "cameraIds": [
+        "nj-1400",
+        "nj-1399",
+        "nj-1406",
+        "nj-799",
+        "nj-800",
+        "nj-10000222"
+      ],
+      "distanceKm": {
+        "nj-1400": 1.65,
+        "nj-1399": 2.99,
+        "nj-1406": 3.71,
+        "nj-799": 5.85,
+        "nj-800": 5.97,
+        "nj-10000222": 6.27
+      }
+    },
+    {
+      "id": "manville",
+      "name": "Manville",
+      "label": "Manville y Raritan River",
+      "center": { "lat": 40.6093, "lon": -74.5974 },
+      "radiusKm": 6.0,
+      "cameraIds": [
+        "nj-1406",
+        "nj-1400",
+        "nj-801",
+        "nj-799",
+        "nj-800",
+        "nj-10000222",
+        "nj-1195"
+      ],
+      "distanceKm": {
+        "nj-1406": 3.29,
+        "nj-1400": 3.7,
+        "nj-801": 4.21,
+        "nj-799": 4.38,
+        "nj-800": 4.36,
+        "nj-10000222": 4.64,
+        "nj-1195": 5.35
+      }
+    },
+    {
+      "id": "bridgewater",
+      "name": "Bridgewater",
+      "label": "Bridgewater e I-78",
+      "center": { "lat": 40.6268, "lon": -74.6954 },
+      "radiusKm": 5.0,
+      "cameraIds": [
+        "nj-10000313",
+        "nj-10820",
+        "nj-10810",
+        "nj-801",
+        "nj-1399"
+      ],
+      "distanceKm": {
+        "nj-10000313": 1.89,
+        "nj-10820": 4.48,
+        "nj-10810": 4.63,
+        "nj-801": 4.56,
+        "nj-1399": 4.59
+      }
+    }
+  ]
+}

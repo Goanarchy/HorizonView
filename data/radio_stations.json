@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "name": "Emisoras públicas verificadas",
+    "description": "Emisoras con transmisión pública HTTPS verificada, logo HTTPS del sitio oficial y metadatos comprobados. El audio se reproduce directamente desde el servidor de la emisora; esta app no redistribuye ni graba la señal.",
+    "verifiedAt": "2026-11-18",
+    "sources": [
+      "Sitio oficial de cada emisora (identidad, programación y logo)",
+      "Radio Browser API (directorio público de emisoras, usado solo para descubrir y contrastar URLs)",
+      "Prueba real HTTP/HTTPS de cada stream con lectura de metadatos ICY o playlist HLS"
+    ],
+    "notes": [
+      "Solo se incluyen URLs HTTPS para evitar contenido mixto en la app HTTPS.",
+      "La disponibilidad se vuelve a comprobar en /api/radio/stations; si una emisora deja de responder se marca como no disponible.",
+      "El texto 'en vivo' se construye con metadatos ICY del propio stream o, para HLS, con la playlist maestra; nunca se inventa el nombre de un programa.",
+      "cityLat/cityLon son coordenadas aproximadas del centro de la ciudad de la emisora, usadas solo para situar el marcador del mapa. No son la ubicación del transmisor."
+    ]
+  },
+  "categories": [
+    { "id": "noticias", "name": "Noticias y tráfico", "icon": "📰" },
+    { "id": "cultura", "name": "Jazz y cultura", "icon": "🎷" },
+    { "id": "clasica", "name": "Clásica", "icon": "🎼" },
+    { "id": "musica", "name": "Música", "icon": "🎵" },
+    { "id": "comunitaria", "name": "Comunitaria", "icon": "📻" }
+  ],
+  "stations": [
+    {
+      "id": "nj1015",
+      "name": "New Jersey 101.5",
+      "callSign": "WKXW-FM",
+      "frequency": "101.5 FM",
+      "category": "noticias",
+      "city": "Trenton · Nueva Jersey",
+      "cityLat": 40.2200, "cityLon": -74.7600,
+      "tagline": "Noticias, tráfico y actualidad de Nueva Jersey",
+      "streamUrl": "https://live.amperwave.net/manifest/townsquare-wkxwfmaac-hlsc3.m3u8",
+      "streamKind": "hls",
+      "codec": "AAC+ 64 kbps",
+      "logo": "https://townsquare.media/site/385/files/2018/08/nj1015b2.png?w=300&q=75&format=natural",
+      "homepage": "https://nj1015.com/",
+      "source": "Sitio oficial nj1015.com + Radio Browser + HLS verificado",
+      "tags": ["new jersey", "news", "traffic", "talk"],
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "wbgo",
+      "name": "WBGO Jazz",
+      "callSign": "WBGO-FM",
+      "frequency": "88.3 FM",
+      "category": "cultura",
+      "city": "Newark · Nueva Jersey",
+      "cityLat": 40.7357, "cityLon": -74.1724,
+      "tagline": "Jazz las 24 horas, radio pública de Newark",
+      "streamUrl": "https://ais-sa8.cdnstream1.com/3629_128.mp3",
+      "streamKind": "icy",
+      "codec": "MP3 128 kbps",
+      "logo": "https://www.wbgo.org/apple-touch-icon.png",
+      "homepage": "https://www.wbgo.org/",
+      "source": "Sitio oficial wbgo.org + Radio Browser + ICY verificado",
+      "tags": ["jazz", "npr", "newark"],
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "wqxr-q2",
+      "name": "WQXR Q2",
+      "callSign": "WQXR-Q2",
+      "frequency": "105.9 FM · HD2",
+      "category": "clasica",
+      "city": "Newark · Nueva Jersey",
+      "cityLat": 40.7357, "cityLon": -74.1724,
+      "tagline": "Música clásica contemporánea de New York Public Radio",
+      "streamUrl": "https://q2stream.wqxr.org/q2.aac",
+      "streamKind": "icy",
+      "codec": "AAC+ 47 kbps",
+      "logo": "https://media2.wnyc.org/i/300/300/c/80/1/wqxr_square_logo.png",
+      "homepage": "https://www.wqxr.org/series/q2/",
+      "source": "Sitio oficial wqxr.org + Radio Browser + ICY verificado",
+      "tags": ["classical", "contemporary", "newark", "public radio"],
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "wjlk",
+      "name": "94.3 The Point",
+      "callSign": "WJLK-FM",
+      "frequency": "94.3 FM",
+      "category": "musica",
+      "city": "Asbury Park · Nueva Jersey",
+      "cityLat": 40.2207, "cityLon": -74.0050,
+      "tagline": "Pop y éxitos de la costa de Nueva Jersey",
+      "streamUrl": "https://live.amperwave.net/manifest/townsquare-wjlkfmaac-hlsc3.m3u8",
+      "streamKind": "hls",
+      "codec": "AAC 64 kbps",
+      "logo": "https://townsquare.media/site/393/files/2017/09/943thepoint_logo.png?w=300&q=75&format=natural",
+      "homepage": "https://943thepoint.com/",
+      "source": "Sitio oficial 943thepoint.com + Radio Browser + HLS verificado",
+      "tags": ["pop", "top 40", "shore"],
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "wfmu",
+      "name": "WFMU Freeform",
+      "callSign": "WFMU-FM",
+      "frequency": "91.1 FM",
+      "category": "comunitaria",
+      "city": "Jersey City · Nueva Jersey",
+      "cityLat": 40.7178, "cityLon": -74.0431,
+      "tagline": "Radio independiente y libre, sin fórmula",
+      "streamUrl": "https://stream2.wfmu.org/freeform-128k",
+      "streamKind": "icy",
+      "codec": "MP3 128 kbps",
+      "logo": "https://wfmu.org/images/wfmu_logo_94.gif",
+      "homepage": "https://wfmu.org/",
+      "source": "Sitio oficial wfmu.org + Radio Browser + ICY verificado",
+      "tags": ["freeform", "independent", "community"],
+      "verifiedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+name: verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  syntax:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Compile Python sources
+        run: |
+          python -m py_compile src/server.py src/ai.py src/extras.py
+          python -m py_compile scripts/refresh.py scripts/nj_tours_capture.py scripts/nj_events_capture.py
+      - name: Check JavaScript syntax
+        run: node --check src/app.js
+      - name: Verify required files exist
+        shell: pwsh
+        run: |
+          $required = @(
+            'index.html', 'styles.css', 'src/app.js', 'src/server.py',
+            'src/ai.py', 'src/extras.py', 'data/nj_cameras.json',
+            'data/de_cameras.json', 'data/nj_tours.json',
+            'README.md', 'PROJECT_CONTEXT.md', 'RELEASE_NOTES.md',
+            'NEXT_VERSION_ROADMAP.md', 'START_HERE_USER_GUIDE.md',
+            'LICENSE', 'VERSION'
+          )
+          $missing = @($required | Where-Object { -not (Test-Path $_) })
+          if ($missing.Count -gt 0) {
+            throw "Missing required files: $($missing -join ', ')"
+          }
+          "ALL_REQUIRED_FILES_PRESENT"

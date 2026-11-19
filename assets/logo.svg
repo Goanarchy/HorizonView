@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="HorizonView">
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#111418" stroke="#3a4149" stroke-width="2"/>
+  <path d="M20 25h18l7-5v24l-7-5H20a4 4 0 0 1-4-4V29a4 4 0 0 1 4-4z" fill="#242b33" stroke="#d2a24c" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="30" cy="32" r="5" fill="none" stroke="#8d98a5" stroke-width="2"/>
+  <circle cx="30" cy="32" r="1.8" fill="#d2a24c"/>
+  <path d="M30 45v7" stroke="#3a4149" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="30" cy="53" r="2.5" fill="#d2a24c"/>
+</svg>

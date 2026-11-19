@@ -1,0 +1,1000 @@
+{
+ "de-NCAM292": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM054": {
+  "ok": 4,
+  "lastOk": "2026-11-19 15:44:25",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 16:50:51"
+ },
+ "de-NCAM055": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:48",
+  "reason": "verificación nearby"
+ },
+ "nj-77": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM285": {
+  "ok": 4,
+  "lastOk": "2026-11-19 15:44:25",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 16:50:51"
+ },
+ "de-NCAM315": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "nj-55": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "nj-36": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM219": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM266": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-18 23:40:27"
+ },
+ "de-NCAM056": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM063": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM075": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM180": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM179": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM323": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM159": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM201": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM168": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM217": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-18 23:40:27"
+ },
+ "de-NCAM312": {
+  "ok": 3,
+  "lastOk": "2026-11-19 16:50:48",
+  "reason": "verificación nearby",
+  "fail": 2,
+  "lastFail": "2026-11-19 15:44:34"
+ },
+ "de-NCAM211": {
+  "ok": 3,
+  "lastOk": "2026-11-19 01:15:50",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM213": {
+  "ok": 3,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby",
+  "fail": 2,
+  "lastFail": "2026-11-19 01:15:58"
+ },
+ "de-NCAM074": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM214": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:43",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:15:58"
+ },
+ "de-NCAM212": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:44",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM221": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:44",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-18 23:40:28"
+ },
+ "de-NCAM153": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:44",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-18 23:40:29"
+ },
+ "de-NCAM198": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:44",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM154": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:47",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM068": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:44",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM064": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:48",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM218": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:48",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM205": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:52",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 15:44:27"
+ },
+ "de-NCAM197": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:47",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM258": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:48",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM118": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:48",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM138": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:48",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM215": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:48",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM167": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:48",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM196": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:49",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:00"
+ },
+ "de-NCAM209": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:49",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM150": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:49",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM117": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:49",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM223": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:51",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:01"
+ },
+ "de-NCAM059": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:49",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM227": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:49",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-18 23:40:37"
+ },
+ "de-NCAM078": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:54",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM169": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:50",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM001": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:50",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM073": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:50",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:02"
+ },
+ "de-NCAM208": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:54",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM065": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:51",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM137": {
+  "ok": 4,
+  "lastOk": "2026-11-19 15:44:28",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 16:50:59"
+ },
+ "de-NCAM226": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:51",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM267": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:51",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM053": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:51",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM008": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:52",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:07"
+ },
+ "de-NCAM222": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:52",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:08"
+ },
+ "de-NCAM067": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:52",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM283": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:52",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:09"
+ },
+ "de-NCAM236": {
+  "ok": 4,
+  "lastOk": "2026-11-19 15:44:28",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 16:51:00"
+ },
+ "de-NCAM204": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:49",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM224": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:52",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM019": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:52",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:09"
+ },
+ "de-NCAM291": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:53",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM050": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:53",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM066": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:53",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM077": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:53",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM080": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:53",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:11"
+ },
+ "de-NCAM187": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:51:01",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 15:44:37"
+ },
+ "de-NCAM060": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:53",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM278": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:53",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM247": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:53",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-18 23:40:39"
+ },
+ "de-NCAM113": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:54",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM225": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:54",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM057": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:54",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM087": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:54",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM186": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:54",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM088": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:54",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM229": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:54",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:13"
+ },
+ "de-NCAM076": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:58",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM228": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:55",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:15"
+ },
+ "de-NCAM322": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:57",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:03"
+ },
+ "de-NCAM160": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:56",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM314": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:58",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM230": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:58",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM062": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:56",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM051": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:57",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM058": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:57",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM275": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:57",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM175": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:57",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM002": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:57",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM040": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:57",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM163": {
+  "ok": 4,
+  "lastOk": "2026-11-19 15:44:31",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 16:51:05"
+ },
+ "de-NCAM039": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:57",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM005": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:57",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 15:44:39"
+ },
+ "de-NCAM034": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:58",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM216": {
+  "ok": 1,
+  "lastOk": "2026-11-18 22:29:22",
+  "reason": "verificación nearby",
+  "fail": 4,
+  "lastFail": "2026-11-19 16:50:56"
+ },
+ "de-NCAM157": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:58",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:18"
+ },
+ "de-NCAM041": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:58",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM046": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:58",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:18"
+ },
+ "de-NCAM049": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:58",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM156": {
+  "ok": 4,
+  "lastOk": "2026-11-19 15:44:31",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 16:51:06"
+ },
+ "de-NCAM011": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:58",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM255": {
+  "ok": 3,
+  "lastOk": "2026-11-19 16:50:58",
+  "reason": "verificación nearby",
+  "fail": 2,
+  "lastFail": "2026-11-19 01:16:19"
+ },
+ "de-NCAM158": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:50:58",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 15:44:32"
+ },
+ "de-NCAM096": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:59",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM052": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:59",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM161": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:59",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM206": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:49",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM310": {
+  "ok": 4,
+  "lastOk": "2026-11-19 15:44:32",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 16:51:07"
+ },
+ "de-NCAM311": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:59",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM270": {
+  "ok": 3,
+  "lastOk": "2026-11-19 16:50:59",
+  "reason": "verificación nearby",
+  "fail": 2,
+  "lastFail": "2026-11-19 01:16:20"
+ },
+ "de-NCAM313": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:59",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM269": {
+  "ok": 3,
+  "lastOk": "2026-11-19 16:50:59",
+  "reason": "verificación nearby",
+  "fail": 2,
+  "lastFail": "2026-11-19 01:16:21"
+ },
+ "de-NCAM016": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:50:59",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM305": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:00",
+  "reason": "verificación nearby"
+ },
+ "nj-752": {
+  "fail": 2,
+  "lastFail": "2026-11-18 23:40:37",
+  "reason": "verificación nearby",
+  "ok": 3,
+  "lastOk": "2026-11-19 16:51:00"
+ },
+ "de-NCAM162": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:00",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM043": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:00",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM035": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:00",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM006": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:00",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM256": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:00",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM281": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:51:00",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:24"
+ },
+ "de-NCAM048": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:00",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM282": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:04",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM302": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:00",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM164": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:00",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM036": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:01",
+  "reason": "verificación nearby"
+ },
+ "nj-39": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:01",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM042": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:01",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM276": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:07",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM116": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:01",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM037": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:01",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM195": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:51:01",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:26"
+ },
+ "nj-12440": {
+  "fail": 5,
+  "lastFail": "2026-11-19 16:51:01",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM194": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:01",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM045": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:08",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM271": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:01",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM106": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:01",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM176": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:01",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM210": {
+  "ok": 4,
+  "lastOk": "2026-11-19 15:44:35",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 16:51:10"
+ },
+ "de-NCAM295": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:02",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM316": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:02",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM277": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:02",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM015": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:03",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM339": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:08",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM306": {
+  "ok": 3,
+  "lastOk": "2026-11-19 16:51:10",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:28"
+ },
+ "de-NCAM188": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:08",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM193": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:51:07",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-18 23:40:48"
+ },
+ "de-NCAM207": {
+  "fail": 3,
+  "lastFail": "2026-11-19 16:50:52",
+  "reason": "verificación nearby",
+  "ok": 2,
+  "lastOk": "2026-11-19 15:44:27"
+ },
+ "de-NCAM166": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:13",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM190": {
+  "ok": 4,
+  "lastOk": "2026-11-19 16:51:07",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 01:16:29"
+ },
+ "de-NCAM069": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:07",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM172": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:08",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM178": {
+  "ok": 4,
+  "lastOk": "2026-11-19 15:44:36",
+  "reason": "verificación nearby",
+  "fail": 1,
+  "lastFail": "2026-11-19 16:51:16"
+ },
+ "de-NCAM185": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:08",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM149": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:08",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM252": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:08",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM140": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:08",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM294": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:08",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM253": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:09",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM183": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:15",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM071": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:09",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM070": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:16",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM017": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:09",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM171": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:09",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM249": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:09",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM152": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:09",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM182": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:02",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM293": {
+  "ok": 3,
+  "lastOk": "2026-11-19 16:51:08",
+  "reason": "verificación nearby",
+  "fail": 2,
+  "lastFail": "2026-11-19 15:44:45"
+ },
+ "de-NCAM023": {
+  "ok": 5,
+  "lastOk": "2026-11-19 16:51:07",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM097": {
+  "fail": 1,
+  "lastFail": "2026-11-18 22:29:33",
+  "reason": "verificación nearby",
+  "ok": 4,
+  "lastOk": "2026-11-19 16:51:07"
+ },
+ "de-NCAM304": {
+  "fail": 1,
+  "lastFail": "2026-11-18 22:29:33",
+  "reason": "verificación nearby",
+  "ok": 4,
+  "lastOk": "2026-11-19 16:51:07"
+ },
+ "nj-10370": {
+  "fail": 1,
+  "lastFail": "2026-11-18 22:35:05",
+  "reason": "native playback"
+ },
+ "nj-10000353": {
+  "fail": 1,
+  "lastFail": "2026-11-18 22:35:08",
+  "reason": "native playback"
+ },
+ "nj-10400": {
+  "fail": 1,
+  "lastFail": "2026-11-18 22:35:11",
+  "reason": "native playback"
+ },
+ "de-NCAM115": {
+  "ok": 3,
+  "lastOk": "2026-11-19 16:51:08",
+  "reason": "verificación nearby"
+ },
+ "de-NCAM184": {
+  "ok": 2,
+  "lastOk": "2026-11-19 16:51:02",
+  "reason": "verificación nearby"
+ }
+}

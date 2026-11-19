@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1020">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="Cámaras públicas de Delaware y Nueva Jersey cerca de ti, con GPS y video en vivo.">
+<title>HorizonView · Conducción y cámaras en vivo</title>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/leaflet.css">
+<link rel="stylesheet" href="assets/maplibre-gl.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-tab="camaras">
+
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo-wrap"><img src="assets/logo.svg" alt=""></div>
+      <div class="brand-copy">
+        <h1>Horizon<span>View</span></h1>
+        <p>Cámaras públicas · Delaware ↔ Nueva Jersey</p>
+      </div>
+    </div>
+    <div class="actions">
+      <button id="btnMobile" class="chip" title="Abrir en el celular" aria-label="Abrir en el celular">▦ <span>Celular</span></button>
+      <button id="btnTheme" class="chip" title="Cambiar tema" aria-label="Cambiar tema">☾ <span>Noche</span></button>
+      <button id="btnWizard" class="chip" title="Ver la guía" aria-label="Ver la guía">? <span>Guía</span></button>
+      <div class="refresh-wrap">
+        <select id="refreshKind" aria-label="Fuente a actualizar" title="Fuente a actualizar">
+          <option value="de">DelDOT</option>
+          <option value="nj">511NJ</option>
+          <option value="all">Ambas fuentes</option>
+        </select>
+        <button id="btnRefresh" class="chip accent" title="Consultar fuentes oficiales">⟳ <span>Actualizar</span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="bento" id="statusbar" aria-label="Resumen del inventario">
+    <div class="tile hero-tile">
+      <span class="tile-k">Inventario verificado</span>
+      <b id="stTotal">—</b>
+      <span class="tile-sub">cámaras oficiales</span>
+    </div>
+    <div class="tile"><span class="tile-k">Nueva Jersey</span><b id="stNj">—</b><span class="tile-sub">511NJ</span></div>
+    <div class="tile"><span class="tile-k">Delaware</span><b id="stDe">—</b><span class="tile-sub">DelDOT</span></div>
+    <div class="tile"><span class="tile-k">Con stream</span><b id="stStream">—</b><span class="tile-sub">HLS en vivo</span></div>
+    <div class="tile weather-tile" id="weatherTile" data-anim="cloudy" title="Clima en vivo · NWS + Open-Meteo">
+      <div class="wscene" aria-hidden="true">
+        <i class="w-body"></i><i class="w-cloud a"></i><i class="w-cloud b"></i>
+        <i class="w-drop d1"></i><i class="w-drop d2"></i><i class="w-drop d3"></i>
+        <i class="w-flake f1"></i><i class="w-flake f2"></i>
+        <i class="w-bolt"></i><i class="w-fog l1"></i><i class="w-fog l2"></i>
+        <i class="w-streak s1"></i><i class="w-streak s2"></i>
+      </div>
+      <span class="tile-k">Clima en vivo</span>
+      <b id="wxTemp">—</b>
+      <span class="tile-sub" id="wxDesc">Consultando…</span>
+    </div>
+    <div class="tile pulse-tile"><i></i><span id="stTime">Conectando…</span></div>
+  </section>
+
+  <div class="refreshlog" id="refreshlog" hidden>
+    <div class="rl-head"><b>Actualizando fuentes oficiales</b><span id="rlState">en cola…</span></div>
+    <pre id="rlBody"></pre>
+  </div>
+
+  <main class="main">
+
+    <section class="panel listpanel" id="listpanel">
+      <div class="phead">
+        <div>
+          <h2>Explorar cámaras</h2>
+          <span class="phead-sub" id="listCount">—</span>
+        </div>
+        <div class="segmented" role="tablist" aria-label="Vista del inventario">
+          <button id="segCamaras" class="seg on" role="tab" aria-selected="true">Inventario</button>
+          <button id="segCerca" class="seg" role="tab" aria-selected="false">Cerca</button>
+          <button id="segLocales" class="seg" role="tab" aria-selected="false">Locales en vivo</button>
+        </div>
+      </div>
+
+      <div id="viewList">
+        <details class="filterbox" id="filterBox" open>
+          <summary><span>⌕ Buscar y filtrar</span><i class="chev">⌄</i></summary>
+          <div class="filterbody">
+            <div class="search">
+              <span class="ico">⌕</span>
+              <input id="q" type="search" placeholder="Nombre, ruta, punto kilométrico…" autocomplete="off" aria-label="Buscar cámaras">
+            </div>
+            <div class="filter-grid">
+              <select id="zone" aria-label="Filtrar por zona"><option value="">Todas las zonas</option></select>
+              <select id="tour" class="wide" aria-label="Filtrar por tour oficial de 511NJ"><option value="">Todos los tours oficiales (85)</option></select>
+              <select id="sort" aria-label="Ordenar">
+                <option value="zone">Orden: zona</option>
+                <option value="name">Orden: nombre A–Z</option>
+                <option value="dist">Orden: distancia</option>
+              </select>
+              <label class="check"><input id="routeOnly" type="checkbox"><span>Solo ruta</span></label>
+              <label class="check"><input id="streamOnly" type="checkbox"><span>Con video</span></label>
+              <label class="check wide"><input id="favOnly" type="checkbox"><span>★ Solo favoritos</span></label>
+            </div>
+          </div>
+        </details>
+        <div id="localZoneBar" class="zone-bar" hidden>
+          <div class="zone-bar-head">
+            <span class="eyebrow">ZONAS LOCALES VERIFICADAS</span>
+            <span id="localZoneInfo" class="zone-info">—</span>
+          </div>
+          <div id="localZoneChips" class="zone-chips"></div>
+          <p class="zone-note">Agrupación informativa de cámaras 511NJ reales por proximidad al centro municipal. Sin GPS, la distancia es al centro de la zona; con GPS se calcula desde tu ubicación.</p>
+        </div>
+        <div id="gpsInfo" class="gpsinfo" hidden></div>
+        <div id="list" class="list"><div class="loading">Cargando inventario verificado…</div></div>
+      </div>
+
+      <div id="viewNear" hidden>
+        <div class="near-hero">
+          <div class="near-hero-copy">
+            <span class="eyebrow">UBICACIÓN LOCAL</span>
+            <h3>Cámaras cerca de ti</h3>
+            <p>Pulsa el botón y verás las cámaras más cercanas con su distancia. Tu ubicación se procesa solo en este dispositivo.</p>
+          </div>
+          <button id="btnGps" class="gps-btn" aria-label="Usar mi GPS"><span class="gps-ring">◎</span><span id="gpsLabel">Usar mi GPS</span></button>
+        </div>
+        <div class="near-bar">
+          <label for="nearCount">Mostrar</label>
+          <select id="nearCount" aria-label="Cantidad de cámaras cercanas">
+            <option value="5">5 cercanas</option>
+            <option value="10" selected>10 cercanas</option>
+            <option value="20">20 cercanas</option>
+            <option value="50">50 cercanas</option>
+          </select>
+          <span id="nearMeta" class="near-meta">—</span>
+        </div>
+        <div id="nearList" class="near-list">
+          <div class="empty">Todavía no hay una ubicación. Pulsa «Usar mi GPS» para empezar.</div>
+        </div>
+      </div>
+
+      <div id="viewLocal" hidden>
+        <div class="local-hero">
+          <span class="eyebrow">CATEGORÍA · CÁMARAS LOCALES</span>
+          <h3>Solo cámaras que funcionan</h3>
+          <p>Buscamos cámaras públicas de cualquier fuente dentro de un radio, descartamos las dadas de baja y comprobamos que su video responda antes de mostrarlas.</p>
+          <div class="local-controls">
+            <label for="radiusKm">Radio</label>
+            <select id="radiusKm" aria-label="Radio de búsqueda en kilómetros">
+              <option value="10">10 km</option>
+              <option value="25" selected>25 km</option>
+              <option value="50">50 km</option>
+              <option value="100">100 km</option>
+            </select>
+            <button id="btnVerifyLocal" class="chip accent" disabled>⟳ <span>Verificar de nuevo</span></button>
+          </div>
+        </div>
+        <div id="localStatus" class="local-status">Pulsa «Usar mi GPS» para buscar cámaras locales en vivo.</div>
+        <div id="localList" class="near-list"></div>
+      </div>
+
+      <div id="viewMap" hidden>
+        <div class="map-head">
+          <div>
+            <span class="eyebrow">MAPA INTERACTIVO</span>
+            <h3>Todas las cámaras en su lugar</h3>
+            <p id="mapCount">—</p>
+          </div>
+          <div class="map-actions">
+            <button id="btnMapLocate" class="chip accent">◎ <span>Mi ubicación</span></button>
+            <button id="btnMapFit" class="chip">⤢ <span>Ajustar</span></button>
+          </div>
+        </div>
+        <div class="map-toggles">
+          <label class="check map-check"><input id="mapVerified" type="checkbox"><span>Solo verificadas en vivo</span></label>
+          <label class="check map-check"><input id="mapLayers" type="checkbox"><span>Capas IA: clima / obras</span></label>
+          <label class="check map-check"><input id="mapZones" type="checkbox"><span>Zonas locales</span></label>
+          <label class="check map-check"><input id="mapSensors" type="checkbox"><span>Sensores USGS</span></label>
+          <label class="check map-check"><input id="mapRadio" type="checkbox"><span>Emisoras de radio</span></label>
+        </div>
+        <div id="mapLayerInfo" class="map-layer-info" hidden></div>
+        <div id="map" class="map" role="application" aria-label="Mapa de cámaras públicas"></div>
+        <p class="map-legend"><i class="dot nj"></i> 511NJ <i class="dot de"></i> DelDOT <i class="dot live"></i> Video verificado <i class="dot alerta"></i> Alerta/obra <span class="map-attr">© OpenStreetMap · © CARTO</span></p>
+      </div>
+
+      <div id="viewAi" hidden>
+        <div class="ai-hero">
+          <span class="eyebrow">CATEGORÍA · IA EXPLICABLE</span>
+          <h3>Atajos con datos reales</h3>
+          <p>Todo se calcula con inventarios oficiales y fuentes públicas gratuitas. Cada respuesta muestra fuente, hora y confianza. No se reconocen rostros, placas ni vehículos, y nunca se inventa un incidente.</p>
+          <div class="trust-strip" id="aiStats">Consultando historial local…</div>
+        </div>
+
+        <details class="ai-card" open>
+          <summary><span>✦ Asistente · pregunta en lenguaje natural</span><i class="chev">⌄</i></summary>
+          <div class="ai-card-body">
+            <div class="ai-search">
+              <input id="aiQuery" type="search" placeholder="Ej.: cámaras con video cerca de Newark NJ" aria-label="Pregunta en lenguaje natural">
+              <button id="btnAiAsk" class="chip accent">Preguntar</button>
+            </div>
+            <div class="ai-chips">
+              <button class="chip ghost ai-example" data-q="cámaras con video cerca de Newark NJ">Cerca de Newark</button>
+              <button class="chip ghost ai-example" data-q="cámaras en el tour NJ Turnpike Tour">Tour Turnpike</button>
+              <button class="chip ghost ai-example" data-q="mis favoritos más confiables">Mis favoritos</button>
+              <button class="chip ghost ai-example" data-q="cámaras con lluvia en Nueva Jersey">Con lluvia</button>
+            </div>
+            <div id="aiExplain" class="ai-explain" hidden></div>
+            <div id="aiResults" class="ai-results"></div>
+          </div>
+        </details>
+
+        <details class="ai-card" id="aiRouteCard">
+          <summary><span>➜ Copiloto de ruta · cámaras a lo largo del camino</span><i class="chev">⌄</i></summary>
+          <div class="ai-card-body">
+            <div class="ai-form">
+              <input id="routeFrom" type="text" placeholder="Origen: Newark, NJ o 39.68,-75.47" aria-label="Origen de la ruta">
+              <input id="routeTo" type="text" placeholder="Destino: Trenton, NJ" aria-label="Destino de la ruta">
+              <select id="routeBuffer" aria-label="Distancia máxima a la ruta">
+                <option value="1">A 1 km de la ruta</option>
+                <option value="2.5" selected>A 2,5 km de la ruta</option>
+                <option value="5">A 5 km de la ruta</option>
+                <option value="10">A 10 km de la ruta</option>
+              </select>
+              <div class="ai-form-actions">
+                <button id="routeUseGeo" class="chip ghost">◎ Usar mi GPS como origen</button>
+                <button id="btnRoute" class="chip accent">Calcular ruta</button>
+                <button id="btnRouteMap" class="chip" hidden>Ver en el mapa</button>
+              </div>
+            </div>
+            <div id="routeOut" class="ai-output"></div>
+          </div>
+        </details>
+
+        <details class="ai-card">
+          <summary><span>☀ Resumen matutino personal</span><i class="chev">⌄</i></summary>
+          <div class="ai-card-body">
+            <p class="ai-hint">Une tus favoritos, el clima actual y las alertas NWS activas. Se genera al pulsar; no envía tus favoritos a ningún servidor externo.</p>
+            <button id="btnBrief" class="chip accent">Generar resumen</button>
+            <div id="briefOut" class="ai-output"></div>
+          </div>
+        </details>
+
+        <details class="ai-card">
+          <summary><span>⚑ Alertas por zona con confianza</span><i class="chev">⌄</i></summary>
+          <div class="ai-card-body">
+            <div class="ai-form-actions">
+              <select id="alertState" aria-label="Zona de las alertas">
+                <option value="NJ,DE">Nueva Jersey y Delaware</option>
+                <option value="NJ">Solo Nueva Jersey</option>
+                <option value="DE">Solo Delaware</option>
+              </select>
+              <button id="btnAlerts" class="chip accent">Consultar alertas</button>
+            </div>
+            <div id="alertsOut" class="ai-output"></div>
+          </div>
+        </details>
+
+        <details class="ai-card">
+          <summary><span>★ Favoritos inteligentes</span><i class="chev">⌄</i></summary>
+          <div class="ai-card-body">
+            <p class="ai-hint">Agrupa tus favoritos por corredor, confianza, tour y cercanía. La agrupación se hace en este dispositivo y no se sincroniza.</p>
+            <button id="btnGroups" class="chip accent">Agrupar favoritos</button>
+            <div id="groupsOut" class="ai-output"></div>
+          </div>
+        </details>
+
+        <details class="ai-card">
+          <summary><span>◈ Triangulación de contexto</span><i class="chev">⌄</i></summary>
+          <div class="ai-card-body">
+            <p class="ai-hint">Explica una cámara usando cámaras vecinas reales, alertas NWS en el punto y clima actual. No interpreta la imagen.</p>
+            <button id="btnContextAi" class="chip accent">Explicar cámara seleccionada</button>
+            <div id="contextOut" class="ai-output"></div>
+          </div>
+        </details>
+
+        <details class="ai-card">
+          <summary><span>⧉ Comparador de cámaras vecinas</span><i class="chev">⌄</i></summary>
+          <div class="ai-card-body">
+            <p class="ai-hint">Abre hasta 4 ángulos reales de la misma zona y compara la calidad de cada fuente. Puedes cambiar las cámaras dentro del comparador.</p>
+            <button id="btnCompareAi" class="chip accent">Abrir comparador</button>
+          </div>
+        </details>
+
+        <details class="ai-card" id="wxCard">
+          <summary><span>☀ Clima animado en tiempo real</span><i class="chev">⌄</i></summary>
+          <div class="ai-card-body">
+            <p class="ai-hint">Observación de estación NWS, clima actual de Open-Meteo, alertas del punto y frecuencia de NOAA Weather Radio. La animación cambia con el código WMO real; se detiene si tu dispositivo pide menos movimiento.</p>
+            <div class="ai-form-actions">
+              <select id="wxPlace" aria-label="Lugar del clima">
+                <option value="geo">Mi ubicación (GPS)</option>
+                <option value="somerville">Somerville</option>
+                <option value="raritan">Raritan</option>
+                <option value="manville">Manville</option>
+                <option value="bridgewater">Bridgewater</option>
+              </select>
+              <button id="btnWx" class="chip accent">Consultar clima</button>
+            </div>
+            <div id="wxOut" class="wx-out"><div class="empty">Elige un lugar y pulsa «Consultar clima».</div></div>
+          </div>
+        </details>
+
+        <details class="ai-card">
+          <summary><span>◉ Herramientas combinadas · corredor y sensores</span><i class="chev">⌄</i></summary>
+          <div class="ai-card-body">
+            <p class="ai-hint">Cruza clima NWS/Open-Meteo, eventos 511NJ, aforos USGS y la frecuencia de NOAA Weather Radio con reglas deterministas. No interpreta video ni declara riesgo sin umbral oficial.</p>
+            <div class="ai-form-actions">
+              <select id="corridorZone" aria-label="Zona del corredor"><option value="somerville">Somerville</option></select>
+              <button id="btnCorridor" class="chip accent">Estado del corredor</button>
+              <button id="btnSensors" class="chip">Sensores y frecuencias</button>
+            </div>
+            <div id="combinedOut" class="ai-output"></div>
+          </div>
+        </details>
+      </div>
+
+      <div id="viewTours" hidden>
+        <div class="tour-hero">
+          <span class="eyebrow">CATEGORÍA · TOURS NARRADOS</span>
+          <h3>Recorre los 85 tours oficiales</h3>
+          <p>La pertenencia de cada cámara viene de 511NJ, no de su nombre. La narración usa coordenadas y zonas reales; puedes escucharla con la voz del dispositivo.</p>
+          <div class="tour-controls">
+            <select id="tourNarr" aria-label="Elegir tour oficial"></select>
+            <button id="btnNarrate" class="chip accent">Generar recorrido</button>
+            <button id="btnSpeak" class="chip" disabled>▶ Escuchar</button>
+            <button id="btnStopSpeak" class="chip ghost" hidden>■ Detener voz</button>
+          </div>
+        </div>
+        <div id="tourOut" class="tour-out"><div class="empty">Elige un tour y pulsa «Generar recorrido».</div></div>
+      </div>
+
+      <div id="viewRadio" hidden>
+        <div class="radio-hero">
+          <span class="eyebrow">CATEGORÍA · RADIO EN VIVO</span>
+          <h3>Emisoras públicas verificadas</h3>
+          <p>Audio directo de cada emisora por HTTPS. Elige una categoría y una emisora: el texto «en vivo» viene de los metadatos reales del stream o de su playlist HLS. Esta app no graba ni redistribuye la señal.</p>
+          <div class="radio-controls">
+            <select id="radioCategory" aria-label="Categoría de radio"><option value="">Todas las categorías</option></select>
+            <button id="btnRadioRefresh" class="chip">⟳ <span>Verificar emisoras</span></button>
+          </div>
+        </div>
+        <div id="radioStatus" class="radio-status">Consultando emisoras…</div>
+        <div id="radioList" class="radio-list"></div>
+        <div id="radioPlayer" class="radio-player" hidden>
+          <img id="radioLogo" src="" alt="" class="radio-logo">
+          <div class="radio-player-copy">
+            <span id="radioPlayerName" class="radio-pname">—</span>
+            <span id="radioNow" class="radio-now">—</span>
+            <span id="radioMetaAt" class="radio-meta-at">—</span>
+          </div>
+          <div class="radio-eq" id="radioEq" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <audio id="radioAudio" controls preload="none" aria-label="Audio en vivo de la emisora"></audio>
+          <a id="radioOfficial" class="chip ghost" href="#" target="_blank" rel="noopener">↗ <span>Sitio oficial</span></a>
+          <button id="btnRadioStop" class="chip warn">■ <span>Detener</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel viewpanel" id="viewpanel">
+      <div class="phead">
+        <div><h2>Visor en vivo</h2><span class="phead-sub">Stream oficial de la agencia</span></div>
+        <span id="viewBadge" class="badge muted">Sin seleccionar</span>
+      </div>
+      <div class="stage" id="stage">
+        <div class="placeholder" id="placeholder">
+          <img src="assets/wizard-viewer.svg" alt="">
+          <p>Elige una cámara del inventario o usa tu GPS para ver la más cercana.</p>
+        </div>
+        <video id="video" playsinline muted controls hidden></video>
+        <div id="playerErr" class="playererr" hidden></div>
+        <div class="stage-tools" id="stageTools" hidden>
+          <button id="btnZoomOut" class="glass-btn" title="Alejar">−</button>
+          <span id="zoomLabel" class="zoom-label">×1.0</span>
+          <button id="btnZoomIn" class="glass-btn" title="Acercar">+</button>
+          <button id="btnZoomReset" class="glass-btn wide" title="Restablecer vista">Centrar</button>
+        </div>
+      </div>
+      <div class="vinfo">
+        <h3 id="vName">—</h3>
+        <div class="vmeta">
+          <span id="vZone">—</span><span id="vCoords">—</span><span id="vDist" hidden></span><span id="vTours" hidden></span>
+        </div>
+        <div class="vactions">
+          <button id="btnPlay" class="chip accent" disabled>▶ <span>Reproducir</span></button>
+          <button id="btnMute" class="chip" disabled title="Activar o silenciar sonido">🔇 <span>Sonido</span></button>
+          <button id="btnShot" class="chip" disabled>▣ <span>Capturar</span></button>
+          <button id="btnFull" class="chip" disabled title="Pantalla completa">⛶ <span>Pantalla completa</span></button>
+          <button id="btnShare" class="chip" disabled title="Copiar enlace a esta cámara">↗ <span>Compartir</span></button>
+          <button id="btnFav" class="chip" disabled title="Guardar o quitar de favoritos">☆ <span>Favorito</span></button>
+          <button id="btnCompare" class="chip" disabled title="Comparar con cámaras vecinas">⧉ <span>Comparar</span></button>
+          <button id="btnContext" class="chip" disabled title="Explicar el contexto de esta cámara">✦ <span>Contexto IA</span></button>
+          <button id="btnReport" class="chip warn" disabled title="Avisar de que esta cámara no funciona">⚑ <span>Reportar fallo</span></button>
+          <a id="btnOfficial" class="chip ghost" href="#" target="_blank" rel="noopener" hidden>↗ <span>Fuente oficial</span></a>
+        </div>
+        <p class="vnote" id="vNote">Los streams se sirven mediante un proxy local para respetar el origen exigido por cada agencia. Las fuentes públicas no ofrecen control PTZ remoto: el acercamiento es digital.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <span>Fuentes oficiales: 511NJ · DelDOT. Sin cámaras ni coordenadas inventadas.</span>
+    <button id="btnSources" class="linkbtn">Ver procedencia ↗</button>
+  </footer>
+</div>
+
+<nav class="tabbar" aria-label="Navegación principal">
+  <button class="tab" data-tab="viaje"><span>➜</span><small>Viaje</small></button>
+  <button class="tab on" data-tab="camaras"><span>▤</span><small>Cámaras</small></button>
+  <button class="tab" data-tab="cerca"><span>◎</span><small>Cerca</small></button>
+  <button class="tab" data-tab="mapa"><span>◇</span><small>Mapa</small></button>
+  <button class="tab" data-tab="locales"><span>◉</span><small>Locales</small></button>
+  <button class="tab" data-tab="ia"><span>✦</span><small>IA</small></button>
+  <button class="tab" data-tab="radio"><span>♪</span><small>Radio</small></button>
+  <button class="tab" data-tab="tours"><span>◇</span><small>Tours</small></button>
+  <button class="tab" data-tab="visor"><span>▶</span><small>Visor</small></button>
+</nav>
+
+<!-- ================================================================ -->
+<!-- INTERFAZ PRINCIPAL · EXPERIENCIA DE CONDUCCIÓN                    -->
+<!-- ================================================================ -->
+<div class="drive-shell" id="driveShell" hidden>
+
+  <div id="driveMap" class="drive-map" role="application" aria-label="Mapa de tu viaje"></div>
+  <div class="drive-vignette" aria-hidden="true"></div>
+
+  <header class="drive-top">
+    <button id="btnDriveData" class="drive-icon" title="Datos y administración" aria-label="Datos y administración">☰</button>
+    <button id="btnDriveDest" class="drive-dest" aria-label="Elegir destino">
+      <span class="drive-dest-ico">⌕</span>
+      <span class="drive-dest-copy"><small id="driveDestLabel">¿A dónde vas?</small><b id="driveDestName">Elige un destino</b><em id="driveHere"></em></span>
+      <span class="drive-dest-chev">›</span>
+    </button>
+    <button id="btnDriveProfile" class="drive-icon" title="Personalizar experiencia" aria-label="Personalizar experiencia">✦</button>
+  </header>
+
+  <div class="drive-tools">
+    <div class="drive-limit" id="driveLimit" hidden title="Límite de velocidad según OpenStreetMap">
+      <b id="driveLimitValue">—</b><small>LÍMITE</small>
+    </div>
+    <button id="btnDriveRecenter" class="drive-icon" title="Centrar en mi posición" aria-label="Centrar en mi posición">◎</button>
+    <button id="btnDriveOverview" class="drive-icon" title="Ver la ruta completa" aria-label="Ver la ruta completa">⌗</button>
+    <button id="btnDriveLayers" class="drive-icon" title="Capas del mapa" aria-label="Capas del mapa">▧</button>
+    <button id="btnDriveVoice" class="drive-icon" title="Activar voz" aria-label="Activar voz">♪</button>
+  </div>
+
+  <div class="drive-layers-panel" id="driveLayersPanel" hidden>
+    <span class="eyebrow">CAPAS DEL VIAJE</span>
+    <label class="check"><input id="dlCameras" type="checkbox" checked><span>Cámaras en ruta</span></label>
+    <label class="check"><input id="dlServices" type="checkbox" checked><span>Servicios (OSM)</span></label>
+    <label class="check"><input id="dlAlerts" type="checkbox" checked><span>Alertas y eventos</span></label>
+    <label class="check"><input id="dlSensors" type="checkbox" checked><span>Sensores y zonas</span></label>
+    <label class="check"><input id="dlRadar" type="checkbox" checked><span>Radar (RainViewer)</span></label>
+    <label class="check"><input id="dlRoad" type="checkbox" checked><span>Cámaras y límites (OSM)</span></label>
+    <label class="check"><input id="dlCoastal" type="checkbox" checked><span>Marea y costas (NOAA)</span></label>
+  </div>
+
+  <div class="drive-chips" id="driveChips" aria-live="polite"></div>
+
+  <section class="drive-bottom">
+    <div class="drive-eta">
+      <div><small>Llegada</small><b id="driveEta">—</b></div>
+      <div><small>Restante</small><b id="driveLeft">—</b></div>
+      <div><small>Próx. cámara</small><b id="driveNext">—</b></div>
+    </div>
+    <div class="drive-progress"><i id="driveProgressBar"></i></div>
+    <div class="drive-row">
+      <div class="drive-music">
+        <img id="driveMusicLogo" src="" alt="" hidden>
+        <span class="drive-music-copy"><small id="driveMusicLabel">Banda sonora</small><b id="driveMusicName">Sin seleccionar</b></span>
+        <button id="btnDriveMusic" class="drive-icon small" title="Reproducir o pausar" aria-label="Reproducir o pausar">▶</button>
+      </div>
+      <div class="drive-speed">
+        <button id="btnSimToggle" class="chip accent">▶ Simular</button>
+        <select id="driveSpeed" aria-label="Velocidad de la simulación">
+          <option value="50">50 km/h</option>
+          <option value="90" selected>90 km/h</option>
+          <option value="110">110 km/h</option>
+        </select>
+      </div>
+    </div>
+    <div class="drive-actions">
+      <button id="btnGpsTrip" class="chip ghost">◎ GPS real</button>
+      <button id="btnTripLog" class="chip ghost">≡ Bitácora</button>
+      <button id="btnTripEnd" class="chip ghost">■ Finalizar</button>
+    </div>
+    <div class="drive-attr" id="driveAttr">
+      <span>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://carto.com/about-carto/" target="_blank" rel="noopener">CARTO</a></span>
+      <span id="driveAttrRadar" hidden> · ⛆ <a href="https://www.rainviewer.com/" target="_blank" rel="noopener">Weather data by RainViewer</a></span>
+    </div>
+  </section>
+
+  <div class="spotlight" id="camSpotlight" hidden>
+    <div class="spot-card">
+      <div class="spot-head">
+        <div>
+          <span class="spot-kicker">CÁMARA EN TU RUTA</span>
+          <b id="spotName">—</b>
+          <small id="spotMeta">—</small>
+        </div>
+        <div class="spot-count" id="spotCount">8</div>
+      </div>
+      <video id="spotVideo" playsinline muted controls></video>
+      <div class="spot-foot">
+        <span id="spotSource">—</span>
+        <span class="spot-btns">
+          <button id="btnSpotOpen" class="chip ghost">Ver en visor</button>
+          <button id="btnSpotSkip" class="chip accent">Continuar ›</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pregunta inicial -->
+<div class="modal start-modal" id="startModal" hidden>
+  <div class="modal-card panel start-card" role="dialog" aria-modal="true" aria-label="¿Qué quieres hacer hoy?">
+    <span class="eyebrow">EXPERIENCIA DE CONDUCCIÓN</span>
+    <h2>¿Qué quieres hacer hoy?</h2>
+    <p>Cámaras, clima, sensores y radio de Nueva Jersey y Delaware, ahora como un viaje hecho a tu medida.</p>
+    <div class="start-grid">
+      <button id="btnStartTrip" class="start-choice primary">
+        <span class="start-ico">➜</span><b>Viajar a un lugar</b>
+        <small>Ruta, música, cámaras en vivo y alertas en un solo recorrido inmersivo.</small>
+      </button>
+      <button id="btnStartData" class="start-choice">
+        <span class="start-ico">▤</span><b>Usar los datos</b>
+        <small>Inventario, administración, tours, mapa e IA explicable.</small>
+      </button>
+    </div>
+    <label class="check start-remember"><input id="startRemember" type="checkbox"><span>No volver a preguntar en este dispositivo</span></label>
+  </div>
+</div>
+
+<!-- Configuración del viaje -->
+<div class="modal" id="tripSetup" hidden>
+  <div class="modal-card panel trip-card" role="dialog" aria-modal="true" aria-label="Arma tu experiencia de viaje">
+    <div class="phead">
+      <div><span class="eyebrow">NUEVO VIAJE</span><h2>Arma tu experiencia</h2></div>
+      <button class="chip ghost" id="btnTripSetupClose">Cerrar</button>
+    </div>
+    <div class="trip-steps">
+      <section class="trip-step">
+        <h3><i>1</i> ¿A dónde vamos?</h3>
+        <div class="search"><span class="ico">⌕</span><input id="tripDest" type="search" placeholder="Ciudad, lugar o 40.62,-74.60" autocomplete="off" aria-label="Destino del viaje"></div>
+        <div id="tripSuggest" class="trip-suggest"></div>
+        <div id="tripQuick" class="trip-quick"></div>
+        <p id="tripDestResolved" class="trip-resolved" hidden></p>
+        <div class="trip-origin">
+          <label class="check"><input id="tripUseGeo" type="checkbox" checked><span>Salir desde mi GPS</span></label>
+          <input id="tripOrigin" type="text" placeholder="O escribe el origen (ej. Newark, NJ)" aria-label="Origen del viaje">
+        </div>
+      </section>
+      <section class="trip-step">
+        <h3><i>2</i> Estilo de viaje</h3>
+        <div id="tripProfiles" class="trip-profiles"></div>
+      </section>
+      <section class="trip-step">
+        <h3><i>3</i> Banda sonora</h3>
+        <div id="tripMusicList" class="trip-music-list"></div>
+      </section>
+      <section class="trip-step">
+        <h3><i>4</i> Ajustes finos</h3>
+        <div class="trip-prefs">
+          <label class="check"><input id="tripPrefCameras" type="checkbox" checked><span>Mostrar cámaras al acercarme</span></label>
+          <label class="check"><input id="tripPrefAlerts" type="checkbox" checked><span>Avisos de clima, alertas y corredor</span></label>
+          <label class="check"><input id="tripPrefSensors" type="checkbox" checked><span>Sensores, zonas y servicios en ruta</span></label>
+          <label class="check"><input id="tripPrefVoice" type="checkbox"><span>Narración con voz del dispositivo</span></label>
+        </div>
+      </section>
+    </div>
+    <div class="trip-foot"><button id="btnTripGo" class="chip accent big">Iniciar experiencia ➜</button></div>
+  </div>
+</div>
+
+<!-- Bitácora y resumen del viaje -->
+<div class="modal" id="tripLogModal" hidden>
+  <div class="modal-card panel compact">
+    <div class="phead"><h2>Bitácora del viaje</h2><button class="chip ghost" id="btnTripLogClose">Cerrar</button></div>
+    <div id="tripLogBody"></div>
+  </div>
+</div>
+
+<div class="modal" id="tripSummary" hidden>
+  <div class="modal-card panel compact">
+    <div class="phead"><h2>Viaje completado</h2><button class="chip ghost" id="btnSummaryClose">Cerrar</button></div>
+    <div id="tripSummaryBody"></div>
+    <div class="vactions">
+      <button id="btnTripAgain" class="chip accent">Repetir viaje</button>
+      <button id="btnTripToData" class="chip ghost">Ir a los datos</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="sources" hidden>
+  <div class="modal-card panel">
+    <div class="phead"><h2>Procedencia de los datos</h2><button class="chip ghost" id="btnCloseSources">Cerrar</button></div>
+    <div id="sourcesBody"></div>
+  </div>
+</div>
+
+<div class="modal" id="mobileModal" hidden>
+  <div class="modal-card panel compact">
+    <div class="phead"><h2>Abrir en el celular</h2><button class="chip ghost" id="btnCloseMobile">Cerrar</button></div>
+    <div class="mobile-body">
+      <img id="mobileQr" src="assets/qr-movil.png" alt="Código QR con el enlace móvil" hidden>
+      <p class="mobile-url" id="mobileUrl">Consultando enlace móvil…</p>
+      <button id="btnCopyMobile" class="chip accent">⧉ <span>Copiar enlace</span></button>
+      <p class="vnote" id="mobileNote">Ejecuta «start-stable.bat» para un enlace HTTPS fijo y gratis (Tailscale Funnel). Si no está instalado, se usa automáticamente el túnel de Cloudflare.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="compareModal" hidden>
+  <div class="modal-card panel wide">
+    <div class="phead"><h2>Comparador de cámaras vecinas</h2><button class="chip ghost" id="btnCloseCompare">Cerrar</button></div>
+    <div id="compareHead" class="compare-note">Cargando…</div>
+    <div id="compareGrid" class="compare-grid"></div>
+    <p class="vnote">Videos oficiales en vivo. La recomendación se basa en la calidad del dato, nunca en lo que ocurre en la imagen.</p>
+  </div>
+</div>
+
+<div class="modal wizard-modal" id="overlay" hidden>
+  <div class="wizard" role="dialog" aria-modal="true" aria-label="Guía de HorizonView">
+    <div class="whead">
+      <div><span class="wtag">GUÍA RÁPIDA</span><h2 id="wTitle">Bienvenido</h2></div>
+      <button class="iconbtn" id="wClose" title="Cerrar" aria-label="Cerrar guía">×</button>
+    </div>
+    <div class="wbody">
+      <div class="wfigure"><img id="wImg" src="assets/wizard-inventory.svg" alt=""></div>
+      <div class="wtext"><p id="wText"></p><ul id="wList"></ul></div>
+    </div>
+    <div class="wfoot">
+      <div class="dots" id="wDots"></div>
+      <div class="wbtns">
+        <button class="chip ghost" id="wSkip">Omitir</button>
+        <button class="chip ghost" id="wPrev">Anterior</button>
+        <button class="chip accent" id="wNext">Siguiente</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script src="assets/hls.min.js"></script>
+<script src="assets/leaflet.js"></script>
+<script src="assets/maplibre-gl.js"></script>
+<script src="src/app.js"></script>
+</body>
+</html>

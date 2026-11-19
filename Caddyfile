@@ -1,0 +1,6 @@
+﻿# Generado automaticamente por Iniciar_CamLocator_Online.ps1
+camlocatornjtp.2600-4040-afd7-bb00-b1da-3188-4db-2b19.sslip.io {
+    tls internal
+    encode gzip
+    reverse_proxy 127.0.0.1:8770
+}

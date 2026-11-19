@@ -1,0 +1,131 @@
+{
+ "cases": [
+  {
+   "oob": [],
+   "clipped": [],
+   "tiny": [],
+   "overlaps": [],
+   "contrast": [],
+   "info": {
+    "viewport": "1360x900",
+    "theme": "dark",
+    "items": 1051,
+    "groups": 6,
+    "listCount": "1051 / 1051",
+    "total": "1051",
+    "wizardHidden": true,
+    "sourcesHidden": true,
+    "docScroll": 1345,
+    "panelW": 684
+   },
+   "case": "1360-dark"
+  },
+  {
+   "oob": [],
+   "clipped": [],
+   "tiny": [],
+   "overlaps": [],
+   "contrast": [],
+   "info": {
+    "viewport": "1024x820",
+    "theme": "dark",
+    "items": 1051,
+    "groups": 6,
+    "listCount": "1051 / 1051",
+    "total": "1051",
+    "wizardHidden": true,
+    "sourcesHidden": true,
+    "docScroll": 1009,
+    "panelW": 969
+   },
+   "case": "1024-dark"
+  },
+  {
+   "oob": [],
+   "clipped": [],
+   "tiny": [],
+   "overlaps": [],
+   "contrast": [],
+   "info": {
+    "viewport": "768x900",
+    "theme": "dark",
+    "items": 1051,
+    "groups": 6,
+    "listCount": "1051 / 1051",
+    "total": "1051",
+    "wizardHidden": true,
+    "sourcesHidden": true,
+    "docScroll": 753,
+    "panelW": 713
+   },
+   "case": "768-dark"
+  },
+  {
+   "oob": [],
+   "clipped": [],
+   "tiny": [],
+   "overlaps": [],
+   "contrast": [],
+   "info": {
+    "viewport": "545x900",
+    "theme": "light",
+    "items": 1051,
+    "groups": 6,
+    "listCount": "1051 / 1051",
+    "total": "1051",
+    "wizardHidden": true,
+    "sourcesHidden": true,
+    "docScroll": 530,
+    "panelW": 490
+   },
+   "case": "545-light"
+  },
+  {
+   "oob": [],
+   "clipped": [],
+   "tiny": [],
+   "overlaps": [],
+   "contrast": [],
+   "info": {
+    "viewport": "1360x900",
+    "theme": "light",
+    "items": 1051,
+    "groups": 6,
+    "listCount": "1051 / 1051",
+    "total": "1051",
+    "wizardHidden": true,
+    "sourcesHidden": true,
+    "docScroll": 1345,
+    "panelW": 684
+   },
+   "case": "1360-light"
+  },
+  {
+   "oob": [],
+   "clipped": [],
+   "tiny": [],
+   "overlaps": [],
+   "contrast": [],
+   "info": {
+    "viewport": "1360x900",
+    "theme": "dark",
+    "items": 1051,
+    "groups": 6,
+    "listCount": "1051 / 1051",
+    "total": "1051",
+    "wizardHidden": false,
+    "sourcesHidden": true,
+    "docScroll": 1345,
+    "panelW": 684
+   },
+   "case": "1360-wizard"
+  }
+ ],
+ "errors": [],
+ "functional": {
+  "selected": "BAY RD @ BLUE HEN MALL S. ENT",
+  "state": "{\"title\":\"BAY RD @ BLUE HEN MALL S. ENT\",\"badge\":\"En vivo\",\"videoHidden\":false,\"err\":\"\",\"playDisabled\":false}",
+  "play": "{\"ready\":4,\"time\":4,\"w\":1280,\"h\":720,\"paused\":false,\"err\":\"\"}",
+  "gps": "{\"info\":\"Ubicación: 39.68082, -75.47113. La cámara más cercana es MM 001.2 North of Delaware Memorial Bridge (0 m). Elige cuál ver en la lista.\",\"sort\":\"dist\",\"first\":\"MM 001.2 North of Delaware Memorial BridgeNJ · Turnpike · 511NJ · HLS0 m511NJ\",\"firstDist\":\"0 m\",\"groups\":[\"Más cercanas · 10\",\"Resto del inventario · 1041\"]}"
+ }
+}
