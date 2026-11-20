@@ -11,6 +11,7 @@ This roadmap summarizes the highest-impact upgrades prioritized after v1.0.0. Fo
 - **Caducidad de `otp`:** detectar tokens vencidos antes de abrir el comparador y sustituirlos por vecinas verificadas con un avance visible en la bitácora.
 - **Caché persistente ligera:** mover las cachés de geocodificación y Overpass de memoria a un archivo local pequeño para sobrevivir reinicios sin bases de datos ni servicios externos.
 - **Pruebas de regresión del túnel:** añadir una verificación que compruebe certificado público, GPS y `/api/health` en el enlace publicado, sin credenciales.
+- **✅ Capa satelital NASA GIBS / GOES-East (implementada):** `GET /api/satellite` e interruptor `dlSatellite` en el mapa de conducción. Sin clave, con hora exacta leída de GIBS, atribución visible y verificador `tests/verify_satellite.py`. Siguiente paso opcional: permitir elegir otros productos del catálogo GIBS (por ejemplo VIIRS City Lights) bajo el mismo patrón de procedencia.
 
 ## v1.2 — Mejoras de la experiencia de conducción
 

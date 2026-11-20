@@ -695,6 +695,13 @@ class Handler(http.server.BaseHTTPRequestHandler):
                 except Exception as exc:
                     self.send_json(200, {"ok": False, "error": str(exc)[:200],
                                          "note": "El radar no está disponible ahora; el mapa sigue funcionando."})
+            elif path == "/api/satellite":
+                # Observación satelital real (NASA GIBS / GOES-East), sin clave.
+                try:
+                    self.send_json(200, extras.satellite_goes())
+                except Exception as exc:
+                    self.send_json(200, {"ok": False, "error": str(exc)[:200],
+                                         "note": "El satélite no está disponible ahora; el mapa sigue funcionando."})
             elif path == "/api/coastal":
                 # Contexto costero oficial (NOAA CO-OPS + NHC) solo cerca del agua.
                 qs = urllib.parse.parse_qs(p.query)

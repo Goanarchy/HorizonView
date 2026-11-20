@@ -502,3 +502,25 @@ Sonda CDP ad-hoc (`verify_drive_interactions.py`, Chrome headless 390×844) sobr
 > Durante la pasada, dos verificaciones CDP (`verify_map.py`, `verify_stage1.py`) fallaron al ejecutarse en paralelo porque comparten el puerto 9333 y porque un túnel caducado devolvía HTTP 530 / Error 1033. Se ejecutaron de nuevo de forma secuencial con el túnel vigente y pasaron. No fue una regresión de la app.
 
 Enlace vigente al cerrar la auditoría: **`https://sam-provide-michel-install.trycloudflare.com/`**. Verificado por HTTPS con certificado público (`/api/health` = 200, 1051 cámaras, 1042 streams; `/src/app.js` y `/styles.css` = 200; título de HorizonView) y guardado en `URL_Movil.txt` junto con `assets/qr-movil.png`. Se generó con `HV_PORT=8771` para publicar la copia de HorizonView sin detener la instalación original en 8770. Tailscale sigue sin instalarse (`TAILSCALE=NO`), así que el hostname fijo `*.ts.net` continúa pendiente de confirmación; el equipo debe permanecer encendido y Cloudflare regenera el enlace al ejecutar `start-mobile.ps1`.
+
+---
+
+## Pasada posterior — capa satelital NASA GIBS / GOES-East (v1.1 en curso)
+
+| Comprobación | Resultado |
+|---|---|
+| `python -m py_compile src/server.py src/ai.py src/extras.py scripts/refresh.py tests/verify_extras.py tests/verify_satellite.py` | `PY_OK` |
+| `node --check src/app.js` | `JS_OK` |
+| `extras.satellite_goes()` | `ok=true`, `time=2026-11-19T23:20:00Z` (leído de `Layer-Time-Actual`), `maxzoom=6`, `sample.status=200`, `sample.contentType=image/png` |
+| Capabilities filtrada | `~33 KB` (frente a ~6 MB del documento completo), sin clave; útil para leer el producto `GOES-East_ABI_Air_Mass` y su `TileMatrixSet` |
+| Tesela real GIBS | `200`, `image/png`, `Access-Control-Allow-Origin: *`, `Layer-Time-Actual` coincide con la hora mostrada |
+| `GET /api/satellite` | Aditivo, `200`, sin cambiar ninguna ruta `/api/*` previa |
+| Interfaz | Interruptor `dlSatellite` en «Capas del viaje»; `drive-satellite` en `window.__driveMapDebug`; atribución y hora visibles solo cuando la capa está activa |
+
+Notas de la pasada:
+
+- Se usa la plantilla sin hora (`/default/{TileMatrixSet}/{z}/{y}/{x}.png`) porque el capabilities con hora concreta puede quedar en caché negativa de CloudFront; la hora que se muestra se lee de la cabecera `Layer-Time-Actual` de la tesela descargada, con el `Default` del capabilities como respaldo.
+- La capa es opcional y va debajo de la ruta: al desactivarla desaparece también su atribución. No modifica Radio, Tours, la IA determinista ni el túnel vigente.
+- Se añadió `tests/verify_satellite.py`, que arranca su propio servidor en `HV_SAT_PORT` (9344), valida la respuesta, descarga una tesela real y comprueba el cableado HTML/JS.
+- La integración se limita a una observación con hora y fuente; no se presenta como predicción ni se inventan datos satelitales.
+- Se investigó el `404` puntual de `.../GoogleMapsCompatible_Level6/6/24/18.png` visto en una corrida de `verify_drive_interactions.py`. Repetida la comprobación directa, esa tesela y sus vecinas (`6/24/17`, `6/24/19`, `6/23/18`, `6/25/18`) devolvieron `200` `image/png`; el capability de la capa solo publica `GoogleMapsCompatible_Level6` en `image/png`. No hay un hueco permanente ni un error de fila/columna: el `404` es transitorio durante la publicación de una escena nueva (~10 min). Se documenta la tolerancia y **no se reduce `maxzoom` a 5**, porque eso degradaría la capa sin eliminar los relevos de escena.

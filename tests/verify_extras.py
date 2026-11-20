@@ -71,6 +71,11 @@ show("streams-check", requests.post(
 show("radar", get("/api/radar", timeout=60),
      lambda d: (f"frames={d.get('count')} host={d.get('host')} "
                 f"attr={d.get('attribution')} cached={d.get('cached')} err={d.get('error')}"))
+show("satellite", get("/api/satellite", timeout=60),
+     lambda d: (f"ok={d.get('ok')} time={d.get('timeLabel') or d.get('time')} "
+                f"tiles={len(d.get('tiles') or [])} maxzoom={d.get('maxzoom')} "
+                f"sample={d.get('sample', {}).get('status')} cached={d.get('cached')} "
+                f"err={d.get('error')}"))
 show("roadfacts", requests.post(
     B + "/api/roadfacts",
     json={"geometry": [[40.6209, -74.6085], [40.6259, -74.6035], [40.63, -74.60]]},

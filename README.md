@@ -65,7 +65,7 @@ Las fuentes públicas de 511NJ y DelDOT **no exponen control PTZ remoto** (ni gi
 Al abrir la app se pregunta **«¿Viajas hacia un lugar o usas los datos?»**. La experiencia de viaje es la pantalla principal; la administración queda a un toque en **«Datos»**.
 
 - **Onboarding en tres pasos:** destino (con sugerencias reales de Nominatim y seis destinos rápidos), estilo de viaje (Explorador, Directo, Panorama, Tranquilo u Observador) y música (cinco emisoras verificadas o silencio). Se recuerda la elección; `?nowizard=1` o `?mode=admin` omiten el asistente y abren la administración directamente.
-- **Mapa inmersivo (etapa 6):** **MapLibre GL JS 5.6.0 servido localmente** con **teselas vectoriales CARTO** (`dark-matter` / `positron`, sin clave), ruta OSRM con tramo recorrido, marcador de posición, cámaras, servicios, alertas y eventos. Zoom de conducción `15.6` con seguimiento del vehículo; «Ver ruta completa» aleja sin perder la ruta y «Recentrar» vuelve a seguir. Capas conmutables: lluvia en vivo de RainViewer, límites y cámaras de velocidad de OpenStreetMap y contexto costero de NOAA. Botones grandes para centrar, capas, voz y música.
+- **Mapa inmersivo (etapa 6):** **MapLibre GL JS 5.6.0 servido localmente** con **teselas vectoriales CARTO** (`dark-matter` / `positron`, sin clave), ruta OSRM con tramo recorrido, marcador de posición, cámaras, servicios, alertas y eventos. Zoom de conducción `15.6` con seguimiento del vehículo; «Ver ruta completa» aleja sin perder la ruta y «Recentrar» vuelve a seguir. Capas conmutables: lluvia en vivo de RainViewer, masa de aire satelital GOES-East/ABI de NASA GIBS, límites y cámaras de velocidad de OpenStreetMap y contexto costero de NOAA. Botones grandes para centrar, capas, voz y música.
 - **HUD tipo Waze:** destino, **«Estás en …»** con la vía real (Nominatim reverse, caché de 24 h y enlace a OSM), hora de llegada, distancia restante, próxima cámara y barra de progreso.
 - **Cámaras emergentes:** cuando una cámara oficial está en la ruta y a menos del margen del perfil, aparece ~400 m antes con su video HLS real durante 4–12 s y vuelve sola al mapa. Se ignoran cámaras al inicio o demasiado lejos del trazado para evitar repeticiones. Botones «Saltar» y «Ver en grande».
 - **Chips contextuales progresivos:** clima y AQI (NWS + Open-Meteo), alertas NWS, corredor explicable, sensores USGS/NOAA, servicios de OpenStreetMap, eventos 511NJ, música y próximos servicios. Aparecen conforme llega cada fuente, sin bloquear la ruta.
@@ -79,6 +79,7 @@ El mapa de conducción se migró de Leaflet a **MapLibre GL JS 5.6.0** (JS y CSS
 | Capa | Fuente | Presentación |
 |---|---|---|
 | Lluvia | RainViewer (`api.rainviewer.com` → `tilecache.rainviewer.com`) | Fotogramas reales recientes sobre el mapa; atribución visible «Weather data by RainViewer» con enlace a `rainviewer.com`; interruptor `dlRadar` |
+| Satélite (masa de aire) | NASA GIBS · GOES-East/ABI (`GOES-East_ABI_Air_Mass`) | Escena real con hora exacta leída de GIBS, teselas WMTS sin clave, atribución «NASA GIBS · NOAA GOES-East» en el pie del mapa; interruptor `dlSatellite` |
 | Límites y cámaras de velocidad | OpenStreetMap vía Overpass (`maxspeed`, `highway=speed_camera`) | Dato cartográfico con nombre, valor y enlace al objeto OSM; ordenado por distancia real al trazado y descartado si queda a más de 2 km; interruptor `dlRoad` |
 | Contexto costero | NOAA CO-OPS (estación más cercana vía MDAPI) y NHC | Nivel de agua observado y tormentas activas con hora y fuente; sin umbrales de riesgo inventados; interruptor `dlCoastal` |
 
@@ -93,6 +94,7 @@ El badge `driveLimit` muestra el límite más cercano al vehículo con su distan
 | `POST /api/trip/services` | Servicios (repostaje, carga, áreas de servicio, peajes) sobre la geometría de la ruta, vía Overpass |
 | `GET /api/weather/live` | Añade `air` con `usAqi` y `pm25` de Open-Meteo Air Quality |
 | `GET /api/radar` | Fotogramas de lluvia de RainViewer con plantilla de tesela, atribución y hora |
+| `GET /api/satellite` | Escena GOES-East/ABI vía NASA GIBS: hora exacta, plantilla de tesela, `maxzoom`, muestra verificada, fuente y atribución |
 | `GET /api/coastal?lat=&lon=` | Estación CO-OPS más cercana, último nivel de agua y tormentas NHC |
 | `POST /api/roadfacts` | Límites y cámaras de velocidad de OSM sobre la geometría, ordenados por distancia real al trazado |
 
@@ -118,6 +120,7 @@ Overpass usa `https://overpass.openstreetmap.fr/api/interpreter` como mirror pri
 | CARTO / OSM | `https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json` y `positron-gl-style/style.json`, vía MapLibre GL local | Mapa vectorial claro/oscuro de la conducción, con atribución visible |
 | CARTO / OSM (admin) | teselas `basemaps.cartocdn.com` vía Leaflet local | Mapa administrativo claro/oscuro, con atribución visible |
 | RainViewer | `https://api.rainviewer.com/public/weather-maps.json` → `https://tilecache.rainviewer.com/...` | Fotogramas reales de lluvia sobre el mapa de conducción |
+| NASA GIBS / NOAA GOES-East | `https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/GOES-East_ABI_Air_Mass/default/...` | Capa opcional de masa de aire observada por ABI; hora exacta y atribución visibles, sin clave |
 | NOAA CO-OPS | `https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations.json` y `/api/prod/datagetter` | Estación mareográfica más cercana y último nivel de agua observado |
 | NOAA NHC | `https://www.nhc.noaa.gov/CurrentStorms.json` | Tormentas activas como contexto, sin predicción propia |
 
@@ -190,6 +193,7 @@ HorizonView/
 - `GET /api/weather/live?lat=&lon=` — clima animado real, pronóstico por horas y radio NWR con frecuencia verificada.
 - `GET /api/sensors?lat=&lon=` — sensores USGS y radios NOAA cercanos, con valor, hora y fuente.
 - `GET /api/radar` — fotogramas de lluvia de RainViewer con host, plantilla de tesela, atribución y hora.
+- `GET /api/satellite` — escena de masa de aire GOES-East/ABI vía NASA GIBS, con hora exacta, plantilla de tesela, muestra verificada, atribución y nota de «observación, no predicción».
 - `GET /api/coastal?lat=&lon=` — estación CO-OPS más cercana, nivel de agua observado y tormentas NHC.
 - `POST /api/roadfacts` — `{geometry}`: límites y cámaras de velocidad de OSM ordenados por distancia al trazado; responde `200` con `ok:false` si Overpass no está disponible.
 - `GET /api/radio/stations[?refresh=1]` — 5 emisoras verificadas, categorías, logos y metadata real.
@@ -230,10 +234,10 @@ El proxy es necesario porque los streams de 511NJ exigen `Referer: https://511nj
 - La app es informativa: no es un sistema de navegación ni de seguridad vial.
 - La IA es **determinista y explicable**: reglas sobre datos públicos, sin LLM y sin análisis de video. Nunca identifica rostros, placas ni vehículos, y nunca afirma un incidente que no publique una agencia. El puntaje de confianza mide la **calidad del dato** (fuente oficial, stream, historial local, verificación en sesión), no el tráfico ni lo que se ve en la imagen.
 - Los eventos de 511NJ son una **captura puntual** con hora guardada en `data/nj_events.json`; no es una suscripción en vivo. Para renovarlos: `python scripts\nj_events_capture.py`. La app firma/cifra esa petición en la página oficial, por eso se captura con el navegador real (CDP), no con `requests`.
-- NWS, Open‑Meteo, OSRM, Nominatim, RainViewer, NOAA y Overpass son gratuitos, pero tienen límites de uso: las respuestas se cachean en memoria (10 min para clima/alertas, 24 h para geocodificación, 15 min para Overpass, 5 min para radar, 24 h para estaciones CO-OPS). Overpass espera hasta 60 s porque en horas punta tarda ~40 s. Nominatim exige `User-Agent`, ya incluido.
+- NWS, Open‑Meteo, OSRM, Nominatim, RainViewer, NOAA y Overpass son gratuitos, pero tienen límites de uso: las respuestas se cachean en memoria (10 min para clima/alertas, 24 h para geocodificación, 15 min para Overpass, 5 min para radar, 10 min para la capa satelital GIBS, 24 h para estaciones CO-OPS). Overpass espera hasta 60 s porque en horas punta tarda ~40 s. Nominatim exige `User-Agent`, ya incluido.
 - Las rutas de OSRM **no incluyen tráfico en vivo**: el tiempo mostrado es una estimación de la red viaria. Las cámaras se comparan con la polilínea real, con un margen elegido por el usuario.
 - Las obras, límites de velocidad y cámaras de velocidad de OpenStreetMap/Overpass son aportaciones cartográficas, no una señal oficial ni un aviso de la agencia; pueden estar desactualizados. El límite mostrado en el HUD es el objeto OSM más cercano a la ruta, con su distancia y enlace; aparece solo si activas la capa vial.
-- El radar de RainViewer y los datos costeros de NOAA CO-OPS/NHC son observaciones con hora propia, no una predicción de la app. La cobertura del radar depende del país y el servicio no ofrece SLA; el nivel de agua y las tormentas se muestran con su fuente, sin umbrales de riesgo inventados.
+- El radar de RainViewer, la capa satelital GOES-East/ABI de NASA GIBS y los datos costeros de NOAA CO-OPS/NHC son observaciones con hora propia, no una predicción de la app. GOES-East publica escenas nuevas aproximadamente cada 10 minutos y la capa se sobre-amplía en zooms altos; si GIBS no responde, la capa se oculta sin afectar la ruta. En el relevo de escena pueden aparecer `404` aislados en la consola del navegador: son transitorios y se recuperan solos. La cobertura del radar depende del país y el servicio no ofrece SLA; el nivel de agua y las tormentas se muestran con su fuente, sin umbrales de riesgo inventados.
 - El comparador abre hasta 4 videos HLS reales a la vez: consume más ancho de banda que el visor individual. La recomendación es sobre la fuente del video, no sobre lo que ocurre en la imagen.
 - La narración de tours usa pertenencia real publicada por 511NJ y muestra los primeros 10 pasos para no saturar la pantalla; el total de cámaras del tour se indica aparte. La voz depende de los idiomas instalados en el dispositivo.
 - Los favoritos y el historial de confianza viven solo en este dispositivo (`localStorage` y `data/ai_signals.json`): no hay cuentas, publicidad ni seguimiento.

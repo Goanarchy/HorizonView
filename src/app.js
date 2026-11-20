@@ -1837,6 +1837,7 @@
       geoWatch: null, geoAtKm: null, finished: false,
       here: "", hereAt: null, hereAtTime: 0, hereBusy: false,
       radar: null, radarLoading: false, roadfacts: null, roadLoading: false,
+      satellite: null, satelliteLoading: false,
       coastal: null, coastLoading: false, accuracyM: 60, contextLoading: false,
     };
   }
@@ -2088,6 +2089,54 @@
       paint: { "raster-opacity": 0.55 } }, before);
     applyLayerVisibility();
   }
+  let satelliteRetryTimer = null;
+  function scheduleSatelliteRetry(attempt = 0) {
+    if (satelliteRetryTimer) return;
+    const step = () => {
+      satelliteRetryTimer = null;
+      const t0 = trip(), m = state.drive && state.drive.map;
+      const box = $("dlSatellite");
+      if (!m || !box || !box.checked || !t0.satellite || !t0.satellite.ok) return;
+      try {
+        if (ensureSatelliteLayer()) { applyLayerVisibility(); return; }
+      } catch (_) { /* el estilo aún no admite fuentes: se reintenta */ }
+      if (attempt < 14) satelliteRetryTimer = setTimeout(() => step(attempt + 1), 500);
+    };
+    satelliteRetryTimer = setTimeout(step, 300);
+  }
+  function ensureSatelliteLayer() {
+    const d = state.drive, m = d && d.map, t0 = trip();
+    const sat = t0.satellite;
+    if (!m || !m.isStyleLoaded() || !sat || !sat.ok || !sat.tiles || !sat.tiles.length) return false;
+    if (m.getSource("drive-satellite")) return true;
+    m.addSource("drive-satellite", {
+      type: "raster", tiles: sat.tiles, tileSize: sat.tileSize || 256,
+      minzoom: 0, maxzoom: sat.maxzoom || 6,
+      attribution: '<a href="' + (sat.attributionUrl || "https://gibs.earthdata.nasa.gov/") +
+        '" target="_blank" rel="noopener">' + (sat.attribution || "NASA GIBS") + "</a>",
+    });
+    const before = m.getLayer("drive-route-casing") ? "drive-route-casing" : undefined;
+    m.addLayer({ id: "drive-satellite", type: "raster", source: "drive-satellite",
+      paint: { "raster-opacity": 0.42 } }, before);
+    return true;
+  }
+  async function refreshSatellite() {
+    const t0 = trip();
+    if (t0.satelliteLoading) return;
+    t0.satelliteLoading = true;
+    try {
+      const j = await apiJson("/api/satellite");
+      t0.satellite = j;
+      if ($("dlSatellite") && $("dlSatellite").checked) ensureSatelliteLayer();
+      if (j.ok) pushChip("satellite", "◈", "Satélite GOES-East",
+        `${j.timeLabel || j.time} · NASA GIBS`, "info");
+    } catch (_) {
+      t0.satellite = { ok: false, frames: [] };
+    } finally {
+      t0.satelliteLoading = false;
+      applyLayerVisibility();
+    }
+  }
   function syncDriveSources(all = false) {
     const t0 = trip(), d = state.drive;
     if (!d || !d.map || !ensureDriveLayers()) return;
@@ -2135,11 +2184,13 @@
     const d = state.drive, m = d && d.map;
     if (!m) return;
     const on = (id) => !!(($(id) && $(id).checked) || false);
+    const t0 = trip();
     const vis = {
       "drive-cameras": on("dlCameras"),
       "drive-services": on("dlServices"),
       "drive-alerts": on("dlAlerts") || on("dlSensors"),
       "drive-radar": on("dlRadar"),
+      "drive-satellite": on("dlSatellite"),
       "drive-roadfacts": on("dlRoad"),
       "drive-coastal": on("dlCoastal"),
     };
@@ -2148,7 +2199,19 @@
     });
     const ra = $("driveAttrRadar");
     if (ra) ra.hidden = !vis["drive-radar"];
-    const t0 = trip();
+    const sa = $("driveAttrSatellite");
+    if (sa) sa.hidden = !(vis["drive-satellite"] && t0.satellite && t0.satellite.ok);
+    const st = $("driveSatelliteTime");
+    if (st) st.textContent = t0.satellite && t0.satellite.timeLabel
+      ? " · " + t0.satellite.timeLabel : "";
+    if (vis["drive-satellite"]) {
+      if (!t0.satellite) refreshSatellite();
+      else if (t0.satellite.ok && !m.getSource("drive-satellite")) {
+        try {
+          if (!m.isStyleLoaded() || !ensureSatelliteLayer()) scheduleSatelliteRetry();
+        } catch (_) { scheduleSatelliteRetry(); }
+      }
+    }
     if (t0.contextLoading) return;
     if (vis["drive-radar"] && !t0.radar) refreshRadar();
     if (vis["drive-roadfacts"] && !t0.roadfacts && t0.route) refreshRoadFacts();
@@ -2239,7 +2302,12 @@
     const marker = new maplibregl.Marker({ element: node, anchor: "center" })
       .setLngLat([-74.6085, 40.6209]).addTo(map);
     state.drive = { map, marker, popup: null };
-    map.on("style.load", () => { if (ensureDriveLayers()) { syncDriveSources(true); applyLayerVisibility(); } });
+    map.on("style.load", () => {
+      if (ensureDriveLayers()) { syncDriveSources(true); applyLayerVisibility(); }
+      // Un segundo intento corto cubre el cambio de tema: algunas fuentes
+      // propias solo pueden añadirse cuando el estilo ya está completamente cargado.
+      setTimeout(() => applyLayerVisibility(), 500);
+    });
     map.on("dragstart", () => { trip().follow = false; });
     map.on("click", () => { if (state.drive.popup) { state.drive.popup.remove(); state.drive.popup = null; } });
     map.on("click", "drive-cameras", (e) => {
@@ -2275,13 +2343,16 @@
       zoom: map.getZoom(), center: map.getCenter(), loaded: map.loaded(),
       follow: trip().follow, style: (map.style && map.style.url) || "",
       tilesLoaded: map.areTilesLoaded ? map.areTilesLoaded() : null,
-      layers: ["drive-radar", "drive-route-line", "drive-cameras", "drive-services",
+      layers: ["drive-radar", "drive-satellite", "drive-route-line", "drive-cameras", "drive-services",
         "drive-alerts", "drive-roadfacts", "drive-coastal"].filter((id) => !!map.getLayer(id)),
-      visible: ["drive-radar", "drive-route-line", "drive-cameras", "drive-roadfacts", "drive-coastal"]
+      visible: ["drive-radar", "drive-satellite", "drive-route-line", "drive-cameras", "drive-roadfacts", "drive-coastal"]
         .filter((id) => map.getLayer(id) && map.getLayoutProperty(id, "visibility") !== "none"),
       tiles: map.style && map.style.sources ? Object.keys(map.style.sources).length : 0,
       roadCount: (trip().roadfacts && trip().roadfacts.count) || 0,
       radarCount: (trip().radar && trip().radar.frames && trip().radar.frames.length) || 0,
+      satelliteTime: trip().satellite && trip().satellite.ok ? trip().satellite.time : null,
+      satelliteSource: !!map.getSource("drive-satellite"),
+      satelliteRetry: !!satelliteRetryTimer,
       coastalStation: trip().coastal && trip().coastal.station
         ? trip().coastal.station.name : null,
       baseSource: !!map.getSource("protomaps"),
@@ -2292,7 +2363,13 @@
   function refreshDriveTheme() {
     const d = state.drive;
     if (!d || !d.map) return;
-    try { d.map.setStyle(driveStyleUrl()); } catch (_) {}
+    try {
+      // setStyle descarta las fuentes propias. El evento `style.load` ya
+      // restaura las capas base, pero `idle` garantiza que el estilo nuevo
+      // esté listo antes de volver a añadir la capa satelital opcional.
+      d.map.once("idle", () => applyLayerVisibility());
+      d.map.setStyle(driveStyleUrl());
+    } catch (_) {}
   }
   function drawTripMap() {
     const t0 = trip(), d = state.drive;
@@ -2895,7 +2972,7 @@
     $("btnDriveLayers").addEventListener("click", () => {
       const p = $("driveLayersPanel"); p.hidden = !p.hidden;
     });
-    ["dlCameras", "dlServices", "dlAlerts", "dlSensors", "dlRadar", "dlRoad", "dlCoastal"].forEach((id) => {
+    ["dlCameras", "dlServices", "dlAlerts", "dlSensors", "dlRadar", "dlSatellite", "dlRoad", "dlCoastal"].forEach((id) => {
       $(id).addEventListener("change", applyLayerVisibility);
     });
     $("btnDriveVoice").addEventListener("click", () => {

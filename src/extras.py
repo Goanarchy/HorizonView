@@ -904,6 +904,115 @@ def rain_radar() -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Satélite (NASA GIBS / NOAA GOES-East): capa raster verificable sin clave
+# ---------------------------------------------------------------------------
+GIBS_LAYER = "GOES-East_ABI_Air_Mass"
+GIBS_TMS = "GoogleMapsCompatible_Level6"
+GIBS_BASE = "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/" + GIBS_LAYER + "/default"
+# La petición filtrada por capa devuelve ~33 KB en lugar de los ~6 MB del
+# capabilities completo. Es la fuente de la hora exacta de la escena.
+GIBS_CAPABILITIES = (
+    "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/1.0.0/WMTSCapabilities.xml"
+    "?SERVICE=WMTS&REQUEST=GetCapabilities&VERSION=1.0.0&LAYER=" + GIBS_LAYER
+)
+
+
+def _mercator_tile(lat: float, lon: float, zoom: int) -> tuple[int, int]:
+    """Fila/columna Web Mercator para una muestra sobre Nueva Jersey."""
+    count = 2 ** zoom
+    x = (lon + 180.0) / 360.0 * count
+    clamped = max(-85.05112878, min(85.05112878, lat))
+    y = (1.0 - math.asinh(math.tan(math.radians(clamped))) / math.pi) / 2.0 * count
+    return int(max(0, min(count - 1, x))), int(max(0, min(count - 1, y)))
+
+
+def satellite_goes() -> dict:
+    """Masa de aire observada por GOES-East vía NASA GIBS, sin clave API.
+
+    La hora no se calcula: GIBS devuelve la hora exacta de la escena en la
+    cabecera `Layer-Time-Actual` de una tesela real sobre Somerville (NJ), con
+    el `Default` del capabilities como respaldo. Se usa la plantilla sin hora
+    (`/default/{TileMatrixSet}/...`) para que el mapa muestre siempre la última
+    escena publicada. Cualquier respuesta incluye fuente, hora de la escena,
+    hora de consulta y atribución. Es una observación, nunca una predicción.
+    """
+    def producer():
+        headers = {"User-Agent": UA, "Accept": "text/xml,application/xml;q=0.9"}
+        response = requests.get(GIBS_CAPABILITIES, headers=headers, timeout=(5, 15))
+        response.raise_for_status()
+        xml = response.text
+        start = xml.find("<ows:Identifier>" + GIBS_LAYER + "</ows:Identifier>")
+        if start < 0:
+            raise RuntimeError("GIBS no publica la capa GOES-East solicitada")
+        block = xml[start:start + 20000]
+        found_time = re.search(r"<Default>([^<]+)</Default>", block)
+        found_tms = re.search(r"<TileMatrixSet>([^<]+)</TileMatrixSet>", block)
+        found_format = re.search(r"<Format>image/([^<]+)</Format>", block)
+        if not found_time:
+            raise RuntimeError("GIBS no informó la hora de la observación")
+        default_time = found_time.group(1).strip()
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", default_time):
+            raise RuntimeError("Formato de hora GIBS inesperado")
+        tms = found_tms.group(1).strip() if found_tms else GIBS_TMS
+        extension = found_format.group(1).strip() if found_format else "png"
+        level = re.search(r"GoogleMapsCompatible_Level(\d+)", tms)
+        maxzoom = min(8, max(0, int(level.group(1)))) if level else 6
+        # GIBS usa {TileMatrix}/{TileRow}/{TileCol}; MapLibre sustituye
+        # {z}/{y}/{x}. El orden de fila/columna se conserva. La variante sin
+        # hora sirve siempre la última escena y evita caches 404 de GIBS.
+        tile = "%s/%s/{z}/{y}/{x}.%s" % (GIBS_BASE, tms, extension)
+        sample_zoom = min(5, maxzoom)
+        col, row = _mercator_tile(40.6209, -74.6085, sample_zoom)
+        sample = "%s/%s/%d/%d/%d.%s" % (
+            GIBS_BASE, tms, sample_zoom, row, col, extension)
+        checked = {"status": None, "contentType": None, "time": None}
+        probe = requests.get(sample, headers={"User-Agent": UA, "Range": "bytes=0-1023"},
+                             timeout=(5, 15), stream=True)
+        try:
+            checked = {"status": probe.status_code,
+                       "contentType": probe.headers.get("Content-Type", ""),
+                       "time": probe.headers.get("Layer-Time-Actual")}
+        finally:
+            probe.close()
+        if checked["status"] >= 400 or "image/" not in checked["contentType"]:
+            raise RuntimeError("La tesela de muestra de GIBS no es una imagen válida")
+        observed = checked["time"] or default_time
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", observed):
+            observed = default_time
+        return {
+            "ok": True,
+            "layer": GIBS_LAYER,
+            "title": "Masa de aire (ABI, GOES-East)",
+            "time": observed,
+            "timeLabel": observed.replace("T", " ").replace("Z", " UTC"),
+            "tileMatrixSet": tms,
+            "maxzoom": maxzoom,
+            "tileSize": 256,
+            "tiles": [tile],
+            "attribution": "NASA GIBS · NOAA GOES-East",
+            "attributionUrl": "https://gibs.earthdata.nasa.gov/",
+            "source": {
+                "name": "NASA GIBS (GOES-East / ABI)",
+                "url": "https://gibs.earthdata.nasa.gov/",
+                "capabilities": GIBS_CAPABILITIES,
+                "sampleTile": sample,
+            },
+            "sample": checked,
+            "note": ("Observación satelital real, no una predicción. GOES-East publica "
+                     "escenas nuevas aproximadamente cada 10 minutos; se muestra la hora "
+                     "exacta y se atribuye a NASA GIBS / NOAA."),
+        }
+
+    value, hit, fetched = cached("gibs:goes-air-mass", 600.0, producer)
+    result = dict(value)
+    result["cached"] = hit
+    result["fetchedAt"] = fetched
+    result["source"] = dict(result.get("source") or {})
+    result["source"]["fetchedAt"] = fetched
+    return result
+
+
+# ---------------------------------------------------------------------------
 # Hechos viales de OpenStreetMap: cámaras de velocidad y límites
 # ---------------------------------------------------------------------------
 def _distance_to_route_km(lat: float, lon: float, pts: list) -> float:

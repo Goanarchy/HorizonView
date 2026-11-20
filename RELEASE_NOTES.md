@@ -62,6 +62,18 @@ Se añadieron variables de entorno para probar una copia sin detener la instalac
 
 ---
 
+## Actualización posterior a v1.0.0 — capa satelital (v1.1 en curso)
+
+Se añadió una **capa opcional de satélite** en el mapa de conducción, sin clave ni certificados:
+
+- **Fuente:** NASA GIBS, producto `GOES-East_ABI_Air_Mass` (masa de aire observada por el instrumento ABI del satélite GOES-East). La Capabilities filtrada por capa (`~33 KB`) y una tesela real sobre Somerville (NJ) se consultan en cada actualización; la hora exacta se lee de la cabecera `Layer-Time-Actual` de GIBS.
+- **Interfaz:** interruptor «Satélite GOES-East (NASA GIBS)» en «Capas del viaje» (`dlSatellite`). La atribución «NASA GIBS · NOAA GOES-East» y la hora de la escena aparecen en el pie del mapa solo cuando la capa está activa.
+- **API:** nuevo `GET /api/satellite`, aditivo. Devuelve plantilla de tesela, `maxzoom`, hora de la escena, hora de consulta, muestra verificada, fuente y atribución. Las rutas `/api/*` existentes no cambiaron.
+- **Límites declarados:** GOES-East publica escenas nuevas aproximadamente cada 10 minutos; es una observación con hora propia, **no una predicción**. La capa usa teselas `GoogleMapsCompatible_Level6` (0–6) y se sobre-amplía en zooms altos; si GIBS no responde, la capa se desactiva sin afectar ruta, cámaras ni radar. Durante el relevo de escena GIBS puede devolver un `404` aislado en alguna tesela; se recupera automáticamente en la siguiente petición y no altera la hora ni la atribución mostradas.
+- **Prueba reproducible:** `python tests/verify_satellite.py` y la comprobación `satellite` dentro de `tests/verify_extras.py`.
+
+---
+
 ## Notas
 
 - El proyecto original `CamLocatorNJTP` y su túnel público quedan intactos; HorizonView se construyó como copia separada y se verificó en el puerto alterno `8771`.

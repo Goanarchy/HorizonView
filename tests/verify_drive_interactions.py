@@ -56,16 +56,23 @@ try:
         "chips": "[...document.querySelectorAll('#driveChips .drive-chip b')].map(x=>x.textContent)",
     }), ensure_ascii=False))
 
-    def toggle(cid, checked):
+    def toggle(cid, checked, wait=0.8):
         c.js("(()=>{const e=document.getElementById('%s');e.checked=%s;e.dispatchEvent(new Event('change'))})()" % (cid, "true" if checked else "false"))
-        time.sleep(0.8)
+        time.sleep(wait)
         return probe({
             "visible": "window.__driveMapDebug().visible",
             "radarAttr": "!document.getElementById('driveAttrRadar').hidden",
+            "satAttr": "!document.getElementById('driveAttrSatellite').hidden",
+            "satTime": "document.getElementById('driveSatelliteTime').textContent",
+            "satSource": "window.__driveMapDebug().satelliteSource",
+            "satTimeDebug": "window.__driveMapDebug().satelliteTime",
         })
 
     print("RADAR_OFF", json.dumps(toggle("dlRadar", False), ensure_ascii=False))
     print("RADAR_ON", json.dumps(toggle("dlRadar", True), ensure_ascii=False))
+    print("SAT_ON", json.dumps(toggle("dlSatellite", True, 4.0), ensure_ascii=False))
+    print("SAT_OFF", json.dumps(toggle("dlSatellite", False), ensure_ascii=False))
+    print("SAT_ON_2", json.dumps(toggle("dlSatellite", True), ensure_ascii=False))
     print("ROAD_OFF", json.dumps(toggle("dlRoad", False), ensure_ascii=False))
     print("ROAD_ON", json.dumps(toggle("dlRoad", True), ensure_ascii=False))
     print("COAST_OFF", json.dumps(toggle("dlCoastal", False), ensure_ascii=False))
@@ -86,16 +93,18 @@ try:
     }), ensure_ascii=False))
 
     c.js("document.getElementById('btnTheme').click()")
-    time.sleep(3.5)
+    time.sleep(8)
     print("TEMA_CLARO", json.dumps(probe({
         "tema": "document.documentElement.getAttribute('data-theme')",
         "style": "window.__driveMapDebug().style",
         "layers": "window.__driveMapDebug().layers.length",
         "visible": "window.__driveMapDebug().visible",
+        "satSource": "window.__driveMapDebug().satelliteSource",
+        "satAttr": "!document.getElementById('driveAttrSatellite').hidden",
         "canvas": "!!document.querySelector('#driveMap canvas.maplibregl-canvas')",
     }), ensure_ascii=False))
     c.js("document.getElementById('btnTheme').click()")
-    time.sleep(3.5)
+    time.sleep(8)
     print("TEMA_OSCURO", json.dumps(probe({
         "tema": "document.documentElement.getAttribute('data-theme')",
         "style": "window.__driveMapDebug().style",
